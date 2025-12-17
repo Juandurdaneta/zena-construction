@@ -16,9 +16,12 @@ export function Hero() {
             backgroundImage: `url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
           }}
         />
-        <div className="absolute inset-0 bg-charcoal-950/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/70 to-charcoal-950/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/60 to-transparent" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to right, rgba(26, 26, 31, 0.92) 0%, rgba(26, 26, 31, 0.75) 45%, rgba(26, 26, 31, 0.35) 100%)'
+          }}
+        />
       </div>
 
       {/* Decorative Elements */}
@@ -46,7 +49,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6 drop-shadow-lg"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6"
+            style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}
           >
             Transform Your Property Into Your{" "}
             <span className="relative">
@@ -65,7 +69,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-xl md:text-2xl text-charcoal-200 leading-relaxed mb-10 max-w-2xl drop-shadow-md"
+            className="text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
             Without contractor nightmares, budget surprises, or 30 years of buyer&apos;s remorse. 
             Discover exactly what your home needs with{" "}
@@ -90,7 +95,7 @@ export function Hero() {
             <Button
               variant="ghost"
               size="lg"
-              className="text-white hover:bg-white/10"
+              className="text-white border-2 border-white/50 hover:bg-white/10 hover:border-white/70"
               icon={<Play className="w-5 h-5" />}
               iconPosition="left"
             >
