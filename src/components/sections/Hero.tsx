@@ -16,8 +16,9 @@ export function Hero() {
             backgroundImage: `url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/80 to-charcoal-950/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/50 to-transparent" />
+        <div className="absolute inset-0 bg-charcoal-950/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/70 to-charcoal-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/60 to-transparent" />
       </div>
 
       {/* Decorative Elements */}
@@ -45,7 +46,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6 drop-shadow-lg"
           >
             Transform Your Property Into Your{" "}
             <span className="relative">
@@ -64,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-xl md:text-2xl text-charcoal-300 leading-relaxed mb-10 max-w-2xl"
+            className="text-xl md:text-2xl text-charcoal-200 leading-relaxed mb-10 max-w-2xl drop-shadow-md"
           >
             Without contractor nightmares, budget surprises, or 30 years of buyer&apos;s remorse. 
             Discover exactly what your home needs with{" "}

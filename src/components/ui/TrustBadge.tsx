@@ -42,13 +42,13 @@ export function TrustBanner({ className = "", variant = "light" }: TrustBannerPr
     { icon: "users" as const, text: "1,000+ Properties Transformed" },
   ];
 
-  const bgStyles = variant === "light" 
-    ? "bg-charcoal-50/80 backdrop-blur-sm border-charcoal-200" 
-    : "bg-charcoal-900/80 backdrop-blur-sm border-charcoal-700";
-  
+  const bgStyles = variant === "light"
+    ? "bg-charcoal-50/80 backdrop-blur-sm border-charcoal-200"
+    : "bg-charcoal-950/90 backdrop-blur-sm border-charcoal-600";
+
   const textStyles = variant === "light"
     ? "text-charcoal-700"
-    : "text-charcoal-200";
+    : "text-white";
 
   return (
     <motion.div
