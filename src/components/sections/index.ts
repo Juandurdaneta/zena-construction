@@ -1,0 +1,10 @@
+export { Hero } from "./Hero";
+export { PainPoints } from "./PainPoints";
+export { Trust } from "./Trust";
+export { EvaluationPreview } from "./EvaluationPreview";
+export { Process } from "./Process";
+export { Guarantee } from "./Guarantee";
+export { Testimonials } from "./Testimonials";
+export { ContactCTA } from "./ContactCTA";
+export { Header } from "./Header";
+export { Footer } from "./Footer";
