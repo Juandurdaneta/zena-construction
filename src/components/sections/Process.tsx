@@ -65,8 +65,51 @@ export function Process() {
         {/* Connection Line - Desktop */}
         <div className="hidden lg:block absolute top-[60px] left-[10%] right-[10%] h-0.5 bg-charcoal-200" />
 
-        {/* Steps Grid */}
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4">
+        {/* Mobile/Tablet Vertical Timeline */}
+        <div className="lg:hidden flex flex-col items-center">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            const isLast = index === steps.length - 1;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="relative flex flex-col items-center text-center w-full max-w-sm"
+              >
+                {/* Step Number */}
+                <div className="w-10 h-10 bg-charcoal-950 text-white rounded-full flex items-center justify-center text-base font-bold z-10">
+                  {index + 1}
+                </div>
+
+                {/* Connector Line to Icon */}
+                <div className="w-0.5 h-4 bg-charcoal-200" />
+
+                {/* Icon Container */}
+                <div
+                  className={`w-20 h-20 ${step.color} rounded-2xl flex items-center justify-center`}
+                >
+                  <Icon className="w-8 h-8" />
+                </div>
+
+                {/* Content */}
+                <h3 className="text-lg font-display font-semibold text-charcoal-950 mb-2 mt-4">
+                  {step.title}
+                </h3>
+                <p className="text-sm text-charcoal-600 leading-relaxed px-4">
+                  {step.description}
+                </p>
+
+                {/* Connector Line to Next Step */}
+                {!isLast && <div className="w-0.5 h-8 bg-charcoal-200 mt-6" />}
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* Desktop Steps Grid */}
+        <div className="hidden lg:grid lg:grid-cols-5 gap-4">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -77,24 +120,18 @@ export function Process() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className="relative text-center"
               >
-                {/* Step Number (Mobile/Tablet) */}
-                <div className="lg:hidden absolute -left-2 top-0 w-8 h-8 bg-charcoal-950 text-white 
-                                rounded-full flex items-center justify-center text-sm font-bold">
-                  {index + 1}
-                </div>
-
                 {/* Icon Container */}
                 <div className="relative inline-flex mb-4">
                   <div
-                    className={`w-20 h-20 ${step.color} rounded-2xl flex items-center justify-center 
+                    className={`w-20 h-20 ${step.color} rounded-2xl flex items-center justify-center
                                 mx-auto relative z-10`}
                   >
                     <Icon className="w-8 h-8" />
                   </div>
 
-                  {/* Step Number Badge (Desktop) */}
-                  <div className="hidden lg:flex absolute -top-2 -right-2 w-7 h-7 bg-charcoal-950 text-white 
-                                  rounded-full items-center justify-center text-xs font-bold z-20">
+                  {/* Step Number Badge */}
+                  <div className="absolute -top-2 -right-2 w-7 h-7 bg-charcoal-950 text-white
+                                  rounded-full flex items-center justify-center text-xs font-bold z-20">
                     {index + 1}
                   </div>
                 </div>
