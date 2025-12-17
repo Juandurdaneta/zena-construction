@@ -13,11 +13,18 @@ interface SectionProps {
   animate?: boolean;
 }
 
-const backgroundStyles = {
-  light: "bg-white",
-  dark: "bg-charcoal-950 text-white",
-  cream: "bg-cream-100",
-  gradient: "bg-gradient-to-b from-cream-100 to-white",
+const backgroundClasses = {
+  light: "",
+  dark: "text-white",
+  cream: "",
+  gradient: "",
+};
+
+const backgroundInlineStyles: Record<string, React.CSSProperties> = {
+  light: { backgroundColor: '#ffffff' },
+  dark: { backgroundColor: '#1a1a1f' },
+  cream: { backgroundColor: '#fdfbf7' },
+  gradient: { background: 'linear-gradient(to bottom, #fdfbf7, #ffffff)' },
 };
 
 const containerStyles = {
@@ -55,7 +62,8 @@ export function Section({
     return (
       <section
         id={id}
-        className={`${backgroundStyles[background]} ${paddingStyles[paddingY]} ${className}`}
+        className={`${backgroundClasses[background]} ${paddingStyles[paddingY]} ${className}`}
+        style={backgroundInlineStyles[background]}
       >
         {content}
       </section>
@@ -69,7 +77,8 @@ export function Section({
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`${backgroundStyles[background]} ${paddingStyles[paddingY]} ${className}`}
+      className={`${backgroundClasses[background]} ${paddingStyles[paddingY]} ${className}`}
+      style={backgroundInlineStyles[background]}
     >
       {content}
     </motion.section>
@@ -97,24 +106,22 @@ export function SectionHeader({
     <div className={`max-w-3xl mb-12 md:mb-16 ${alignmentStyles}`}>
       {label && (
         <span
-          className={`section-label ${dark ? "text-amber-400" : "text-amber-600"}`}
+          className="section-label font-semibold text-sm tracking-wider uppercase mb-4 inline-block"
+          style={{ color: dark ? '#fbbf24' : '#d97706' }}
         >
           {label}
         </span>
       )}
       <h2
-        className={`text-3xl md:text-4xl lg:text-5xl font-display font-semibold leading-tight mb-4 ${
-          dark ? "text-white" : "text-charcoal-950"
-        }`}
-        style={{ textWrap: "balance" } as React.CSSProperties}
+        className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold leading-tight mb-4"
+        style={{ textWrap: "balance", color: dark ? '#ffffff' : '#1a1a1f' } as React.CSSProperties}
       >
         {title}
       </h2>
       {subtitle && (
         <p
-          className={`text-lg md:text-xl leading-relaxed ${
-            dark ? "text-charcoal-300" : "text-charcoal-600"
-          }`}
+          className="text-lg md:text-xl leading-relaxed"
+          style={{ color: dark ? '#b8b8c1' : '#5d5d6c' }}
         >
           {subtitle}
         </p>

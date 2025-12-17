@@ -41,12 +41,12 @@ export function Guarantee() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="section-label text-amber-400">Peace of Mind</span>
+            <span className="section-label" style={{ color: '#fbbf24' }}>Peace of Mind</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-white leading-tight mb-6">
               Our Rock-Solid{" "}
-              <span className="text-amber-400">Guarantee</span>
+              <span style={{ color: '#fbbf24' }}>Guarantee</span>
             </h2>
-            <p className="text-lg text-charcoal-300 leading-relaxed mb-8">
+            <p className="text-lg leading-relaxed mb-8" style={{ color: '#b8b8c1' }}>
               At Zena Construction, every project is backed by industry-leading 
               warranties. We stand behind our work because we&apos;re confident in 
               the quality we deliver.
@@ -62,19 +62,19 @@ export function Guarantee() {
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
                   className="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-trust-500/20 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-trust-400" />
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)' }}>
+                    <CheckCircle className="w-6 h-6" style={{ color: '#4ade80' }} />
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-lg font-semibold text-white">
                         {guarantee.title}
                       </span>
-                      <span className="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-bold rounded">
+                      <span className="px-2 py-0.5 text-xs font-bold rounded" style={{ backgroundColor: 'rgba(245, 158, 11, 0.2)', color: '#fbbf24' }}>
                         {guarantee.duration}
                       </span>
                     </div>
-                    <p className="text-charcoal-400 text-sm">
+                    <p className="text-sm" style={{ color: '#91919f' }}>
                       {guarantee.description}
                     </p>
                   </div>
@@ -102,20 +102,20 @@ export function Guarantee() {
                 {/* Inner Circle */}
                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-600/10 
                                 flex flex-col items-center justify-center text-center p-6">
-                  <Shield className="w-16 h-16 text-amber-400 mb-3" />
+                  <Shield className="w-16 h-16 mb-3" style={{ color: '#fbbf24' }} />
                   <span className="text-2xl font-display font-bold text-white mb-1">
                     100% Backed
                   </span>
-                  <span className="text-sm text-charcoal-300">
+                  <span className="text-sm" style={{ color: '#b8b8c1' }}>
                     Industry-Leading Warranties
                   </span>
                 </div>
 
                 {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-trust-500 rounded-full flex items-center justify-center">
+                <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#22c55e' }}>
                   <CheckCircle className="w-5 h-5 text-white" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
+                <div className="absolute -bottom-4 -left-4 w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#f59e0b' }}>
                   <Award className="w-5 h-5 text-white" />
                 </div>
               </div>
@@ -126,8 +126,8 @@ export function Guarantee() {
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                 className="absolute -top-8 -right-8 bg-white rounded-xl p-3 shadow-soft-lg"
               >
-                <span className="text-2xl font-display font-bold text-charcoal-950">10+</span>
-                <span className="text-xs text-charcoal-600 block">Years</span>
+                <span className="text-2xl font-display font-bold" style={{ color: '#1a1a1f' }}>10+</span>
+                <span className="text-xs block" style={{ color: '#5d5d6c' }}>Years</span>
               </motion.div>
 
               <motion.div
@@ -135,8 +135,8 @@ export function Guarantee() {
                 transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
                 className="absolute -bottom-8 -left-8 bg-white rounded-xl p-3 shadow-soft-lg"
               >
-                <span className="text-2xl font-display font-bold text-charcoal-950">1000+</span>
-                <span className="text-xs text-charcoal-600 block">Projects</span>
+                <span className="text-2xl font-display font-bold" style={{ color: '#1a1a1f' }}>1000+</span>
+                <span className="text-xs block" style={{ color: '#5d5d6c' }}>Projects</span>
               </motion.div>
             </div>
           </motion.div>

@@ -198,13 +198,13 @@ export function EvaluationPreview() {
         transition={{ delay: 0.5, duration: 0.4 }}
         className="text-center"
       >
-        <div className="inline-flex items-center gap-3 bg-charcoal-950 text-white px-8 py-4 rounded-full mb-8">
-          <span className="text-charcoal-400">Total Value:</span>
-          <span className="text-2xl font-display font-bold text-amber-400">
+        <div className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full mb-8" style={{ backgroundColor: '#1a1a1f' }}>
+          <span style={{ color: '#91919f' }}>Total Value:</span>
+          <span className="text-2xl font-display font-bold" style={{ color: '#fbbf24' }}>
             $1,200
           </span>
-          <span className="text-charcoal-400">•</span>
-          <span className="text-trust-400 font-semibold">Yours FREE</span>
+          <span style={{ color: '#91919f' }}>•</span>
+          <span className="font-semibold" style={{ color: '#4ade80' }}>Yours FREE</span>
         </div>
 
         <div className="block">

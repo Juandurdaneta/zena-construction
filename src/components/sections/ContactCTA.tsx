@@ -115,21 +115,21 @@ export function ContactCTA() {
           </div>
 
           {/* Qualifications */}
-          <div className="bg-charcoal-950 rounded-2xl p-6 md:p-8">
+          <div className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#1a1a1f' }}>
             <h4 className="text-white font-semibold mb-4">
               This is ONLY for Houston homeowners who are:
             </h4>
             <ul className="space-y-3">
               {qualifications.map((qual, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-trust-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-charcoal-300">{qual}</span>
+                  <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#4ade80' }} />
+                  <span style={{ color: '#b8b8c1' }}>{qual}</span>
                 </li>
               ))}
             </ul>
 
             {/* Scarcity */}
-            <div className="mt-6 pt-6 border-t border-charcoal-800">
+            <div className="mt-6 pt-6 border-t" style={{ borderColor: '#41414b' }}>
               <div className="flex items-center gap-2 text-amber-400">
                 <Shield className="w-5 h-5" />
                 <span className="font-semibold">

@@ -97,7 +97,8 @@ export function PainPoints() {
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="relative bg-charcoal-950 rounded-3xl p-8 md:p-12 text-center overflow-hidden"
+        className="relative rounded-3xl p-8 md:p-12 text-center overflow-hidden"
+        style={{ backgroundColor: '#1a1a1f' }}
       >
         {/* Background Decoration */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
