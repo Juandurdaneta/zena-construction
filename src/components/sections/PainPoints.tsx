@@ -19,30 +19,35 @@ const painPoints = [
     title: "Property Condition Worries",
     description:
       "Visible damage, aging materials, or storm wear that keeps you up during weather warnings.",
+    color: "bg-amber-100 text-amber-600",
   },
   {
     icon: Clock,
     title: "Past Contractor Nightmares",
     description:
       "Timeline delays, poor communication, or work that looked fine until it failed.",
+    color: "bg-rose-100 text-rose-600",
   },
   {
     icon: HelpCircle,
     title: "Decision Paralysis",
     description:
       "Terrified of making a $30K+ mistake you'll regret for decades, whether fixing critical damage or planning upgrades.",
+    color: "bg-purple-100 text-purple-600",
   },
   {
     icon: Home,
     title: "Neighbor Comparison",
     description:
       'Frustrated watching neighbors improve their homes while yours sits in "someday we\'ll handle this" limbo.',
+    color: "bg-blue-100 text-blue-600",
   },
   {
     icon: DollarSign,
     title: "Pricing Confusion",
     description:
       'One contractor quotes $18K, another $42K for "the same work," and you have no idea what accounts for the difference.',
+    color: "bg-green-100 text-green-600",
   },
 ];
 
@@ -70,10 +75,8 @@ export function PainPoints() {
                          hover:border-amber-200 hover:shadow-soft-lg transition-all duration-300"
             >
               {/* Icon */}
-              <div className="w-12 h-12 bg-charcoal-100 group-hover:bg-amber-100 
-                              rounded-xl flex items-center justify-center mb-4 
-                              transition-colors duration-300">
-                <Icon className="w-6 h-6 text-charcoal-600 group-hover:text-amber-600 transition-colors" />
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${point.color.split(' ')[0]}`}>
+                <Icon className={`w-6 h-6 ${point.color.split(' ')[1]}`} />
               </div>
 
               {/* Content */}
