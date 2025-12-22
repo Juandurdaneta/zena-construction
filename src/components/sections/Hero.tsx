@@ -25,8 +25,8 @@ export function Hero() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-20 w-64 h-64 bg-amber-500/5 rounded-full blur-2xl" />
+      <div className="absolute top-20 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl" />
 
       {/* Content */}
       <div className="relative z-10 section-padding container-wide pt-32 pb-20">
@@ -36,10 +36,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 rounded-full mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 rounded-full mb-8"
           >
-            <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
-            <span className="text-amber-300 text-sm font-medium">
+            <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
+            <span className="text-primary-300 text-sm font-medium">
               Houston&apos;s Trusted Construction Partner
             </span>
           </motion.div>
@@ -54,12 +54,12 @@ export function Hero() {
           >
             Transform Your Property Into Your{" "}
             <span className="relative">
-              <span className="relative z-10 text-amber-400">Best Investment</span>
+              <span className="relative z-10 text-primary-400">Best Investment</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute bottom-2 left-0 right-0 h-3 bg-amber-500/30 -rotate-1 origin-left"
+                className="absolute bottom-2 left-0 right-0 h-3 bg-primary-500/30 -rotate-1 origin-left"
               />
             </span>
           </motion.h1>

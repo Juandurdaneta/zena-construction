@@ -51,8 +51,8 @@ export function FinalCTA() {
       className="relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-200/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-amber-100/50 rounded-full blur-2xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary-100/50 rounded-full blur-2xl" />
 
       <div ref={ref} className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -65,11 +65,11 @@ export function FinalCTA() {
             <span className="section-label">Limited Availability</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-4">
               Claim Your{" "}
-              <span className="text-amber-500">FREE</span> Property Evaluation
+              <span className="text-primary-500">FREE</span> Property Evaluation
             </h2>
             <div className="inline-flex items-center gap-2 bg-charcoal-950 text-white px-4 py-2 rounded-full mb-6">
               <span className="text-charcoal-400">Valued at</span>
-              <span className="text-xl font-display font-bold text-amber-400">
+              <span className="text-xl font-display font-bold text-primary-400">
                 $1,200
               </span>
             </div>
@@ -95,8 +95,8 @@ export function FinalCTA() {
                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
                     className="flex items-start gap-4"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-amber-600" />
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-charcoal-950">
@@ -114,7 +114,7 @@ export function FinalCTA() {
             {/* Qualification Box */}
             <div className="bg-charcoal-950 rounded-2xl p-6 mb-8">
               <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
-                <Users className="w-5 h-5 text-amber-400" />
+                <Users className="w-5 h-5 text-primary-400" />
                 This is ONLY for Houston homeowners who are:
               </h3>
               <ul className="space-y-3">
@@ -132,13 +132,13 @@ export function FinalCTA() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.5, duration: 0.4 }}
-              className="inline-flex items-center gap-3 bg-amber-100 border border-amber-200 
+              className="inline-flex items-center gap-3 bg-primary-100 border border-primary-200
                          rounded-xl px-5 py-3"
             >
-              <Clock className="w-5 h-5 text-amber-600" />
+              <Clock className="w-5 h-5 text-primary-600" />
               <span className="text-charcoal-800 font-medium">
                 Places are strictly limited to{" "}
-                <strong className="text-amber-700">5 residential clients</strong>{" "}
+                <strong className="text-primary-700">5 residential clients</strong>{" "}
                 per month.
               </span>
             </motion.div>

@@ -107,7 +107,7 @@ export function SectionHeader({
       {label && (
         <span
           className="section-label font-semibold text-sm tracking-wider uppercase mb-4 inline-block"
-          style={{ color: dark ? '#fbbf24' : '#d97706' }}
+          style={{ color: dark ? '#D4BC8C' : '#AB8D5E' }}
         >
           {label}
         </span>

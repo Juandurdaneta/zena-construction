@@ -54,7 +54,7 @@ export function EvaluationForm() {
         </p>
         <button
           onClick={() => setIsSubmitted(false)}
-          className="text-amber-600 font-medium hover:text-amber-700 underline"
+          className="text-primary-600 font-medium hover:text-primary-700 underline"
         >
           Submit another request
         </button>

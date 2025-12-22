@@ -90,7 +90,7 @@ function EvaluationCard({
     >
       <div
         className={`bg-white rounded-2xl border-2 transition-all duration-300 overflow-hidden
-                    ${isExpanded ? "border-amber-400 shadow-soft-lg" : "border-charcoal-100 hover:border-amber-200"}`}
+                    ${isExpanded ? "border-primary-400 shadow-soft-lg" : "border-charcoal-100 hover:border-primary-200"}`}
       >
         {/* Header - Always Visible */}
         <button
@@ -99,7 +99,7 @@ function EvaluationCard({
         >
           {/* Number Badge */}
           <div className="flex-shrink-0">
-            <span className="block text-4xl font-display font-bold text-charcoal-200 group-hover:text-amber-300 transition-colors">
+            <span className="block text-4xl font-display font-bold text-charcoal-200 group-hover:text-primary-300 transition-colors">
               {point.number}
             </span>
           </div>
@@ -109,8 +109,8 @@ function EvaluationCard({
             <div className="flex items-start justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <Icon className="w-5 h-5 text-amber-500" />
-                  <span className="text-sm font-semibold text-amber-600 uppercase tracking-wide">
+                  <Icon className="w-5 h-5 text-primary-500" />
+                  <span className="text-sm font-semibold text-primary-600 uppercase tracking-wide">
                     {point.highlight}
                   </span>
                 </div>
@@ -126,7 +126,7 @@ function EvaluationCard({
               <motion.div
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
-                className="flex-shrink-0 w-10 h-10 bg-charcoal-100 group-hover:bg-amber-100 
+                className="flex-shrink-0 w-10 h-10 bg-charcoal-100 group-hover:bg-primary-100
                            rounded-full flex items-center justify-center transition-colors"
               >
                 <ChevronDown className="w-5 h-5 text-charcoal-600" />
@@ -153,7 +153,7 @@ function EvaluationCard({
                   <ul className="space-y-3">
                     {point.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <Sparkles className="w-4 h-4 text-amber-500 flex-shrink-0 mt-1" />
+                        <Sparkles className="w-4 h-4 text-primary-500 flex-shrink-0 mt-1" />
                         <span className="text-charcoal-600">{detail}</span>
                       </li>
                     ))}
@@ -200,7 +200,7 @@ export function EvaluationPreview() {
       >
         <div className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full mb-8" style={{ backgroundColor: '#1a1a1f' }}>
           <span style={{ color: '#91919f' }}>Total Value:</span>
-          <span className="text-2xl font-display font-bold" style={{ color: '#fbbf24' }}>
+          <span className="text-2xl font-display font-bold" style={{ color: '#D4BC8C' }}>
             $1,200
           </span>
           <span style={{ color: '#91919f' }}>•</span>

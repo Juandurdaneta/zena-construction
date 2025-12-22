@@ -79,8 +79,8 @@ export function Contact() {
       className="relative overflow-hidden"
     >
       {/* Background Decorations */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-amber-200/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-0 w-64 h-64 bg-amber-100/40 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-0 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-0 w-64 h-64 bg-primary-100/40 rounded-full blur-3xl" />
 
       <div ref={ref} className="relative z-10">
         {/* Header */}
@@ -93,11 +93,11 @@ export function Contact() {
           <span className="section-label">Limited Availability</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-4">
             Claim Your{" "}
-            <span className="text-amber-500">FREE</span> Property Evaluation
+            <span className="text-primary-500">FREE</span> Property Evaluation
           </h2>
           <div className="inline-flex items-center gap-2 bg-charcoal-950 text-white px-6 py-2 rounded-full mb-6">
             <span className="text-charcoal-400">Valued at</span>
-            <span className="text-xl font-display font-bold text-amber-400">
+            <span className="text-xl font-display font-bold text-primary-400">
               $1,200
             </span>
           </div>
@@ -129,9 +129,9 @@ export function Contact() {
                       className="flex items-start gap-4 bg-white/80 backdrop-blur-sm rounded-xl p-4 
                                  border border-charcoal-100"
                     >
-                      <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg 
+                      <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-lg
                                       flex items-center justify-center">
-                        <Icon className="w-5 h-5 text-amber-600" />
+                        <Icon className="w-5 h-5 text-primary-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-charcoal-950 mb-1">
@@ -164,8 +164,8 @@ export function Contact() {
               {/* Scarcity Element */}
               <div className="mt-6 pt-6 border-t border-charcoal-700">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-amber-400 rounded-full animate-pulse" />
-                  <span className="text-amber-400 font-semibold">
+                  <div className="w-3 h-3 bg-primary-400 rounded-full animate-pulse" />
+                  <span className="text-primary-400 font-semibold">
                     Places are strictly limited to 5 residential clients per month
                   </span>
                 </div>

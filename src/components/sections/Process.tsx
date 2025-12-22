@@ -17,7 +17,7 @@ const steps = [
     title: "Schedule Your Evaluation",
     description:
       "Book your free 90-minute property evaluation at a time that works for you.",
-    color: "bg-amber-100 text-amber-600",
+    color: "bg-primary-100 text-primary-600",
   },
   {
     icon: ClipboardCheck,

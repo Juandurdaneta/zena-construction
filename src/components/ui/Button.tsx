@@ -18,9 +18,9 @@ interface ButtonProps extends Omit<HTMLMotionProps<"button">, "children"> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: `
-    bg-amber-500 text-charcoal-950 
-    hover:bg-amber-400 
-    focus:ring-amber-500/30
+    bg-primary-500 text-charcoal-950
+    hover:bg-primary-400
+    focus:ring-primary-500/30
     shadow-sm hover:shadow-md
   `,
   secondary: `

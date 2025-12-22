@@ -74,7 +74,7 @@ export function ContactCTA() {
           <span className="section-label">Limited Availability</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-4">
             Claim Your{" "}
-            <span className="text-amber-500">FREE</span> Property Evaluation
+            <span className="text-primary-500">FREE</span> Property Evaluation
           </h2>
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
             During your no-obligation evaluation, our certified experts will assess 
@@ -83,9 +83,9 @@ export function ContactCTA() {
           </p>
 
           {/* Value Badge */}
-          <div className="inline-flex items-center gap-2 bg-amber-100 px-4 py-2 rounded-full mb-8">
+          <div className="inline-flex items-center gap-2 bg-primary-100 px-4 py-2 rounded-full mb-8">
             <span className="text-charcoal-700">Total Value:</span>
-            <span className="text-xl font-display font-bold text-amber-600">$1,200</span>
+            <span className="text-xl font-display font-bold text-primary-600">$1,200</span>
             <span className="text-charcoal-500">•</span>
             <span className="text-trust-600 font-semibold">Yours FREE</span>
           </div>
@@ -130,7 +130,7 @@ export function ContactCTA() {
 
             {/* Scarcity */}
             <div className="mt-6 pt-6 border-t" style={{ borderColor: '#41414b' }}>
-              <div className="flex items-center gap-2 text-amber-400">
+              <div className="flex items-center gap-2 text-primary-400">
                 <Shield className="w-5 h-5" />
                 <span className="font-semibold">
                   Places are strictly limited to 5 residential clients per month.

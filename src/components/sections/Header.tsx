@@ -53,7 +53,7 @@ export function Header() {
             <a href="#" className="flex items-center gap-2">
               <div
                 className={`w-10 h-10 rounded-lg flex items-center justify-center font-display font-bold text-lg
-                            ${isScrolled ? "bg-amber-500 text-white" : "bg-white text-charcoal-950"}`}
+                            ${isScrolled ? "bg-primary-500 text-white" : "bg-white text-charcoal-950"}`}
               >
                 Z
               </div>
@@ -71,7 +71,7 @@ export function Header() {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className={`text-sm font-medium transition-colors hover:text-amber-500
+                  className={`text-sm font-medium transition-colors hover:text-primary-500
                               ${isScrolled ? "text-charcoal-700" : "text-white/90"}`}
                 >
                   {link.label}

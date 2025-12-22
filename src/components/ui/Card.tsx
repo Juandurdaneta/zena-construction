@@ -58,13 +58,13 @@ export function IconCard({
   icon,
   title,
   description,
-  iconBg = "bg-amber-100",
+  iconBg = "bg-primary-100",
   className = "",
 }: IconCardProps) {
   return (
     <Card className={className}>
       <div
-        className={`w-14 h-14 ${iconBg} rounded-xl flex items-center justify-center mb-5 text-amber-600`}
+        className={`w-14 h-14 ${iconBg} rounded-xl flex items-center justify-center mb-5 text-primary-600`}
       >
         {icon}
       </div>
@@ -92,7 +92,7 @@ export function NumberCard({
   return (
     <Card className={className} variant="bordered">
       <div className="flex items-start gap-5">
-        <span className="text-5xl font-display font-bold text-amber-500">
+        <span className="text-5xl font-display font-bold text-primary-500">
           {number}
         </span>
         <div>

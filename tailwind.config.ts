@@ -1,5 +1,18 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * ==============================================
+ * COLOR CONFIGURATION
+ * ==============================================
+ *
+ * To change the primary accent color:
+ * Edit the "primary" color values in src/app/globals.css
+ * (Look for the "PRIMARY ACCENT COLOR" section)
+ *
+ * The colors defined here mirror globals.css for compatibility.
+ * ==============================================
+ */
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +22,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Primary - Deep charcoal for trust and stability
+        // Charcoal - Deep neutral for text and backgrounds
         charcoal: {
           50: "#f7f7f8",
           100: "#eeeef0",
@@ -23,19 +36,19 @@ const config: Config = {
           900: "#2d2d33",
           950: "#1a1a1f",
         },
-        // Secondary - Warm amber/gold for Houston warmth
-        amber: {
-          50: "#fffbeb",
-          100: "#fef3c7",
-          200: "#fde68a",
-          300: "#fcd34d",
-          400: "#fbbf24",
-          500: "#f59e0b",
-          600: "#d97706",
-          700: "#b45309",
-          800: "#92400e",
-          900: "#78350f",
-          950: "#451a03",
+        // Primary - Main accent color (change in globals.css)
+        primary: {
+          50: "#FDFBF7",
+          100: "#F9F4EA",
+          200: "#EFE4CC",
+          300: "#E2D1AC",
+          400: "#D4BC8C",
+          500: "#C4A77D",
+          600: "#AB8D5E",
+          700: "#8C7247",
+          800: "#705A38",
+          900: "#594729",
+          950: "#3D301B",
         },
         // Trust green for guarantees
         trust: {

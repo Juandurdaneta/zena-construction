@@ -19,7 +19,7 @@ const painPoints = [
     title: "Property Condition Worries",
     description:
       "Visible damage, aging materials, or storm wear that keeps you up during weather warnings.",
-    color: "bg-amber-100 text-amber-600",
+    color: "bg-primary-100 text-primary-600",
   },
   {
     icon: Clock,
@@ -72,7 +72,7 @@ export function PainPoints() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group relative bg-white rounded-2xl p-6 border border-charcoal-100 
-                         hover:border-amber-200 hover:shadow-soft-lg transition-all duration-300"
+                         hover:border-primary-200 hover:shadow-soft-lg transition-all duration-300"
             >
               {/* Icon */}
               <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${point.color.split(' ')[0]}`}>
@@ -88,7 +88,7 @@ export function PainPoints() {
               </p>
 
               {/* Hover decoration */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-amber-50 to-transparent 
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-primary-50 to-transparent
                               rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           );
@@ -104,13 +104,13 @@ export function PainPoints() {
         style={{ backgroundColor: '#1a1a1f' }}
       >
         {/* Background Decoration */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-amber-500/5 rounded-full blur-2xl" />
+        <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary-500/5 rounded-full blur-2xl" />
 
         <div className="relative z-10">
           <p className="text-xl md:text-2xl text-white font-display leading-relaxed mb-6 max-w-3xl mx-auto">
             Here&apos;s the truth:{" "}
-            <span className="text-amber-400 font-semibold">It&apos;s not your fault.</span>{" "}
+            <span className="text-primary-400 font-semibold">It&apos;s not your fault.</span>{" "}
             The construction industry makes it nearly impossible to make confident 
             decisions, whether you&apos;re fixing urgent problems or planning strategic upgrades.
           </p>

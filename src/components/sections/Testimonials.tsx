@@ -42,7 +42,7 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={i}
           className={`w-5 h-5 ${
-            i < rating ? "text-amber-400 fill-amber-400" : "text-charcoal-200"
+            i < rating ? "text-primary-400 fill-primary-400" : "text-charcoal-200"
           }`}
         />
       ))}
@@ -73,9 +73,9 @@ export function Testimonials() {
                        hover:shadow-soft-lg transition-shadow duration-300"
           >
             {/* Quote Icon */}
-            <div className="absolute top-6 right-6 w-10 h-10 bg-amber-100 rounded-full 
+            <div className="absolute top-6 right-6 w-10 h-10 bg-primary-100 rounded-full
                             flex items-center justify-center">
-              <Quote className="w-5 h-5 text-amber-500" />
+              <Quote className="w-5 h-5 text-primary-500" />
             </div>
 
             {/* Rating & Highlight */}
@@ -95,8 +95,8 @@ export function Testimonials() {
             {/* Author */}
             <div className="flex items-center gap-3 pt-4 border-t border-charcoal-100">
               {/* Avatar Placeholder */}
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 
-                              rounded-full flex items-center justify-center text-white 
+              <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-500
+                              rounded-full flex items-center justify-center text-white
                               font-semibold text-lg">
                 {testimonial.name.charAt(0)}
               </div>
@@ -141,7 +141,7 @@ export function Testimonials() {
         <div className="flex items-center gap-2">
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
+              <Star key={i} className="w-4 h-4 text-primary-400 fill-primary-400" />
             ))}
           </div>
           <span className="text-charcoal-600 text-sm">

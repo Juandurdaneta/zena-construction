@@ -82,7 +82,7 @@ export function Trust() {
             <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl md:text-3xl font-display font-bold text-amber-500">
+                  <div className="text-2xl md:text-3xl font-display font-bold text-primary-500">
                     {stat.value}
                   </div>
                   <div className="text-xs text-charcoal-600 font-medium">
@@ -94,7 +94,7 @@ export function Trust() {
           </motion.div>
 
           {/* Decorative element */}
-          <div className="absolute -top-4 -left-4 w-24 h-24 bg-amber-100 rounded-2xl -z-10" />
+          <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
         </motion.div>
 
         {/* Right Column - Content */}
@@ -106,7 +106,7 @@ export function Trust() {
           <span className="section-label">Why Choose Zena</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-6">
             You&apos;re Looking For Someone You Can{" "}
-            <span className="text-amber-500">Trust</span>
+            <span className="text-primary-500">Trust</span>
           </h2>
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
             You&apos;re not looking for the cheapest solution. You&apos;re looking for 
@@ -131,8 +131,8 @@ export function Trust() {
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-amber-600" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-primary-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-charcoal-950 mb-1">

@@ -56,7 +56,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center font-display font-bold text-lg">
+              <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center font-display font-bold text-lg">
                 Z
               </div>
               <span className="text-xl font-display font-semibold">
@@ -72,7 +72,7 @@ export function Footer() {
             <div className="space-y-3 mb-6">
               <a
                 href="tel:+17135550123"
-                className="flex items-center gap-3 hover:text-amber-400 transition-colors"
+                className="flex items-center gap-3 hover:text-primary-400 transition-colors"
                 style={{ color: '#b8b8c1' }}
               >
                 <Phone className="w-5 h-5" />
@@ -80,7 +80,7 @@ export function Footer() {
               </a>
               <a
                 href="mailto:info@zenaconstruction.com"
-                className="flex items-center gap-3 hover:text-amber-400 transition-colors"
+                className="flex items-center gap-3 hover:text-primary-400 transition-colors"
                 style={{ color: '#b8b8c1' }}
               >
                 <Mail className="w-5 h-5" />
@@ -104,7 +104,7 @@ export function Footer() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 hover:bg-amber-500 rounded-lg
+                    className="w-10 h-10 hover:bg-primary-500 rounded-lg
                                flex items-center justify-center transition-colors"
                   style={{ backgroundColor: '#41414b' }}
                   >
@@ -125,7 +125,7 @@ export function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => handleNavClick(link.href)}
-                    className="hover:text-amber-400 transition-colors"
+                    className="hover:text-primary-400 transition-colors"
                     style={{ color: '#b8b8c1' }}
                   >
                     {link.label}
@@ -145,7 +145,7 @@ export function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => handleNavClick(link.href)}
-                    className="hover:text-amber-400 transition-colors"
+                    className="hover:text-primary-400 transition-colors"
                     style={{ color: '#b8b8c1' }}
                   >
                     {link.label}

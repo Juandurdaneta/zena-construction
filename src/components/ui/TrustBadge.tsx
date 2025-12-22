@@ -65,7 +65,7 @@ export function TrustBanner({ className = "", variant = "light" }: TrustBannerPr
             key={index}
             className={`flex items-center gap-2 ${textStyles}`}
           >
-            <Icon className="w-5 h-5 text-trust-500" />
+            <Icon className="w-5 h-5 text-primary-500" />
             <span className="text-sm font-medium whitespace-nowrap">{badge.text}</span>
           </div>
         );
