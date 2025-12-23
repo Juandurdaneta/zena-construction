@@ -60,7 +60,7 @@ const evaluationPoints = [
     title: "3 Value-Add Material Decisions",
     highlight: "$40K+ Property Value Increase",
     description:
-      "These strategic choices cost surprisingly little more upfront but dramatically increase curb appeal and resale value—most contractors never mention them because they don't understand property investment strategy.",
+      "These strategic choices cost surprisingly little more upfront but dramatically increase curb appeal and resale value most contractors never mention them because they don't understand property investment strategy.",
     details: [
       "Which upgrades deliver the highest ROI",
       "Design choices that boost curb appeal significantly",
