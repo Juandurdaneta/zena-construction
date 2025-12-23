@@ -200,11 +200,11 @@ export function EvaluationPreview() {
       >
         <div className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full mb-8" style={{ backgroundColor: '#1a1a1f' }}>
           <span style={{ color: '#91919f' }}>Total Value:</span>
-          <span className="text-2xl font-display font-bold" style={{ color: '#D4BC8C' }}>
+          <span className="text-2xl font-display font-bold">
             $1,200
           </span>
           <span style={{ color: '#91919f' }}>•</span>
-          <span className="font-semibold" style={{ color: '#4ade80' }}>Yours FREE</span>
+          <span className="font-semibold text-primary-400" >Yours FREE</span>
         </div>
 
         <div className="block">

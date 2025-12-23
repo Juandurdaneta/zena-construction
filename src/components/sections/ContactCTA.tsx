@@ -85,9 +85,9 @@ export function ContactCTA() {
           {/* Value Badge */}
           <div className="inline-flex items-center gap-2 bg-primary-100 px-4 py-2 rounded-full mb-8">
             <span className="text-charcoal-700">Total Value:</span>
-            <span className="text-xl font-display font-bold text-primary-600">$1,200</span>
+            <span className="text-xl font-display font-bold text-primary-400">$1,200</span>
             <span className="text-charcoal-500">•</span>
-            <span className="text-trust-600 font-semibold">Yours FREE</span>
+            <span className="text-primary-600 font-semibold">Yours FREE</span>
           </div>
 
           {/* Benefits */}
