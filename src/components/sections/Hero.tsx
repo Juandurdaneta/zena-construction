@@ -40,7 +40,7 @@ export function Hero() {
           >
             <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
             <span className="text-primary-300 text-sm font-medium">
-              Houston&apos;s Trusted Construction Partner
+              Texas&apos;s Trusted Construction Partner
             </span>
           </motion.div>
 

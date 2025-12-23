@@ -17,35 +17,35 @@ const steps = [
     title: "Schedule Your Evaluation",
     description:
       "Book your free 90-minute property evaluation at a time that works for you.",
-    color: "bg-primary-100 text-primary-600",
+    color: "bg-amber-50 text-amber-700",
   },
   {
     icon: ClipboardCheck,
     title: "Comprehensive Assessment",
     description:
       "Our certified experts inspect your property using thermal imaging and drone technology.",
-    color: "bg-blue-100 text-blue-600",
+    color: "bg-stone-100 text-stone-600",
   },
   {
     icon: FileText,
     title: "Clear Recommendations",
     description:
       "Receive a detailed report with transparent pricing and material education.",
-    color: "bg-purple-100 text-purple-600",
+    color: "bg-amber-100 text-amber-800",
   },
   {
     icon: Wrench,
     title: "Expert Execution",
     description:
       "If you choose to proceed, our manufacturer-certified crews deliver quality work.",
-    color: "bg-green-100 text-green-600",
+    color: "bg-stone-50 text-stone-700",
   },
   {
     icon: PartyPopper,
     title: "Peace of Mind",
     description:
       "Enjoy your transformed property backed by our rock-solid warranties.",
-    color: "bg-rose-100 text-rose-600",
+    color: "bg-amber-50 text-amber-600",
   },
 ];
 
