@@ -105,8 +105,8 @@ export function ContactCTA() {
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-trust-100 rounded-lg flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-trust-600" />
+                  <div className="flex-shrink-0 w-8 h-8 bg-charcoal-100 rounded-lg flex items-center justify-center">
+                    <Icon className="w-4 h-4 text-charcoal-600" />
                   </div>
                   <p className="text-charcoal-700 leading-relaxed">{benefit.text}</p>
                 </motion.div>
@@ -115,22 +115,22 @@ export function ContactCTA() {
           </div>
 
           {/* Qualifications */}
-          <div className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#1a1a1f' }}>
-            <h4 className="text-white font-semibold mb-4">
+          <div className="rounded-2xl p-6 md:p-8 bg-gradient-to-br from-primary-50 via-primary-100 to-cream-200 border border-primary-200 shadow-soft">
+            <h4 className="text-charcoal-900 font-semibold mb-4">
               This is ONLY for Houston homeowners who are:
             </h4>
             <ul className="space-y-3">
               {qualifications.map((qual, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#4ade80' }} />
-                  <span style={{ color: '#b8b8c1' }}>{qual}</span>
+                  <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5 text-trust-500" />
+                  <span className="text-charcoal-700">{qual}</span>
                 </li>
               ))}
             </ul>
 
             {/* Scarcity */}
-            <div className="mt-6 pt-6 border-t" style={{ borderColor: '#41414b' }}>
-              <div className="flex items-center gap-2 text-primary-400">
+            <div className="mt-6 pt-6 border-t border-primary-200">
+              <div className="flex items-center gap-2 text-primary-700">
                 <Shield className="w-5 h-5" />
                 <span className="font-semibold">
                   Places are strictly limited to 5 residential clients per month.
@@ -153,8 +153,8 @@ export function ContactCTA() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-8"
               >
-                <div className="w-16 h-16 bg-trust-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle2 className="w-8 h-8 text-trust-600" />
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle2 className="w-8 h-8 text-primary-500" />
                 </div>
                 <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-3">
                   Thank You!

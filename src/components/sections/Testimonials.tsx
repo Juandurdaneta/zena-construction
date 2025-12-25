@@ -81,7 +81,7 @@ export function Testimonials() {
             {/* Rating & Highlight */}
             <div className="mb-4">
               <StarRating rating={testimonial.rating} />
-              <span className="inline-block mt-2 px-3 py-1 bg-trust-100 text-trust-700 
+              <span className="inline-block mt-2 px-3 py-1 bg-charcoal-100 text-charcoal-700
                                text-xs font-semibold rounded-full">
                 {testimonial.highlight}
               </span>

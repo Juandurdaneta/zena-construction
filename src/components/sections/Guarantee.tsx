@@ -60,11 +60,8 @@ export function Guarantee() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                  className="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10"
+                  className="bg-white/5 rounded-xl p-5 border border-white/10"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)' }}>
-                    <CheckCircle className="w-6 h-6" style={{ color: '#4ade80' }} />
-                  </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-lg font-semibold text-white">
