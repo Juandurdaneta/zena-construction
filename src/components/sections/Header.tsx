@@ -6,11 +6,10 @@ import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const navLinks = [
-  { href: "#pain-points", label: "Challenges" },
-  { href: "#trust", label: "Why Zena" },
-  { href: "#evaluation", label: "Free Evaluation" },
+  { href: "#trust", label: "Why Us" },
   { href: "#process", label: "Our Process" },
   { href: "#testimonials", label: "Reviews" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
