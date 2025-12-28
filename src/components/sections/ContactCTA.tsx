@@ -116,7 +116,6 @@ export function ContactCTA() {
             </span>
           </div>
         </motion.div>
-
         {/* Right Column - Form */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
