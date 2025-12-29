@@ -5,6 +5,7 @@ export { EvaluationPreview } from "./EvaluationPreview";
 export { Process } from "./Process";
 export { Guarantee } from "./Guarantee";
 export { Testimonials } from "./Testimonials";
+export { Portfolio } from "./Portfolio";
 export { ContactCTA } from "./ContactCTA";
 export { Header } from "./Header";
 export { Footer } from "./Footer";

@@ -3,18 +3,23 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 
 const navLinks = [
-  { href: "#trust", label: "Why Us" },
-  { href: "#process", label: "Our Process" },
-  { href: "#testimonials", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
+  { href: "#trust", label: "Why Us", isPage: false },
+  { href: "#process", label: "Our Process", isPage: false },
+  { href: "/our-work", label: "Our Work", isPage: true },
+  { href: "#testimonials", label: "Reviews", isPage: false },
+  { href: "#contact", label: "Contact", isPage: false },
 ];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,11 +30,21 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (href: string) => {
+  // On non-home pages, always show solid header
+  const showSolidHeader = isScrolled || !isHomePage;
+
+  const handleNavClick = (href: string, isPage: boolean) => {
     setIsMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (!isPage) {
+      // If we're not on the home page, redirect to home with anchor
+      if (pathname !== "/") {
+        window.location.href = "/" + href;
+        return;
+      }
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -41,7 +56,7 @@ export function Header() {
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
                     ${
-                      isScrolled
+                      showSolidHeader
                         ? "bg-white/95 backdrop-blur-md shadow-soft py-3"
                         : "bg-transparent py-5"
                     }`}
@@ -52,13 +67,13 @@ export function Header() {
             <a href="#" className="flex items-center gap-2">
               <div
                 className={`w-10 h-10 rounded-lg flex items-center justify-center font-display font-bold text-lg
-                            ${isScrolled ? "bg-primary-500 text-white" : "bg-white text-charcoal-950"}`}
+                            ${showSolidHeader ? "bg-primary-500 text-white" : "bg-white text-charcoal-950"}`}
               >
                 Z
               </div>
               <span
                 className={`text-xl font-display font-semibold hidden sm:block
-                            ${isScrolled ? "text-charcoal-950" : "text-white"}`}
+                            ${showSolidHeader ? "text-charcoal-950" : "text-white"}`}
               >
                 Zena Construction
               </span>
@@ -67,14 +82,25 @@ export function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className={`text-sm font-medium transition-colors hover:text-primary-500
-                              ${isScrolled ? "text-charcoal-700" : "text-white/90"}`}
-                >
-                  {link.label}
-                </button>
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors hover:text-primary-500
+                                ${showSolidHeader ? "text-charcoal-700" : "text-white/90"}`}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href, link.isPage)}
+                    className={`text-sm font-medium transition-colors hover:text-primary-500
+                                ${showSolidHeader ? "text-charcoal-700" : "text-white/90"}`}
+                  >
+                    {link.label}
+                  </button>
+                )
               ))}
             </nav>
 
@@ -83,7 +109,7 @@ export function Header() {
               <a
                 href="tel:+17135550123"
                 className={`flex items-center gap-2 text-sm font-medium
-                            ${isScrolled ? "text-charcoal-700" : "text-white/90"}`}
+                            ${showSolidHeader ? "text-charcoal-700" : "text-white/90"}`}
               >
                 <Phone className="w-4 h-4" />
                 (713) 555-0123
@@ -91,7 +117,7 @@ export function Header() {
               <Button
                 size="sm"
                 icon={<ArrowRight className="w-4 h-4" />}
-                onClick={() => handleNavClick("#contact")}
+                onClick={() => handleNavClick("#contact", false)}
               >
                 Free Evaluation
               </Button>
@@ -102,7 +128,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2 rounded-lg transition-colors
                           ${
-                            isScrolled
+                            showSolidHeader
                               ? "text-charcoal-950 hover:bg-charcoal-100"
                               : "text-white hover:bg-white/10"
                           }`}
@@ -131,14 +157,26 @@ export function Header() {
             <nav className="section-padding py-6">
               <div className="space-y-1">
                 {navLinks.map((link) => (
-                  <button
-                    key={link.href}
-                    onClick={() => handleNavClick(link.href)}
-                    className="block w-full text-left px-4 py-3 text-charcoal-700 font-medium 
-                               rounded-lg hover:bg-charcoal-50 transition-colors"
-                  >
-                    {link.label}
-                  </button>
+                  link.isPage ? (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block w-full text-left px-4 py-3 text-charcoal-700 font-medium
+                                 rounded-lg hover:bg-charcoal-50 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <button
+                      key={link.href}
+                      onClick={() => handleNavClick(link.href, link.isPage)}
+                      className="block w-full text-left px-4 py-3 text-charcoal-700 font-medium
+                                 rounded-lg hover:bg-charcoal-50 transition-colors"
+                    >
+                      {link.label}
+                    </button>
+                  )
                 ))}
               </div>
 
@@ -154,7 +192,7 @@ export function Header() {
                   <Button
                     fullWidth
                     icon={<ArrowRight className="w-4 h-4" />}
-                    onClick={() => handleNavClick("#contact")}
+                    onClick={() => handleNavClick("#contact", false)}
                   >
                     Get Free Evaluation
                   </Button>

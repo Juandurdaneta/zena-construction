@@ -7,6 +7,7 @@ import {
   Process,
   Guarantee,
   Testimonials,
+  Portfolio,
   ContactCTA,
   Footer,
 } from "@/components/sections";
@@ -23,6 +24,7 @@ export default function Home() {
         <Process />
         <Guarantee />
         <Testimonials />
+        <Portfolio />
         <ContactCTA />
       </main>
       <Footer />
