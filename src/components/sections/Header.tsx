@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 
@@ -64,20 +65,21 @@ export function Header() {
         <div className="section-padding container-wide">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2">
-              <div
-                className={`w-10 h-10 rounded-lg flex items-center justify-center font-display font-bold text-lg
-                            ${showSolidHeader ? "bg-primary-500 text-white" : "bg-white text-charcoal-950"}`}
-              >
-                Z
-              </div>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/images/logo.png"
+                alt="Zena Construction"
+                width={48}
+                height={48}
+                className="h-10 w-auto"
+              />
               <span
                 className={`text-xl font-display font-semibold hidden sm:block
                             ${showSolidHeader ? "text-charcoal-950" : "text-white"}`}
               >
                 Zena Construction
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
@@ -107,12 +109,12 @@ export function Header() {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+17135550123"
+                href="tel:+13052163246"
                 className={`flex items-center gap-2 text-sm font-medium
                             ${showSolidHeader ? "text-charcoal-700" : "text-white/90"}`}
               >
                 <Phone className="w-4 h-4" />
-                (713) 555-0123
+                +1 (305) 216-3246
               </a>
               <Button
                 size="sm"
@@ -182,11 +184,11 @@ export function Header() {
 
               <div className="mt-6 pt-6 border-t border-charcoal-100 space-y-4">
                 <a
-                  href="tel:+17135550123"
+                  href="tel:+13052163246"
                   className="flex items-center gap-2 text-charcoal-700 font-medium px-4"
                 >
                   <Phone className="w-5 h-5" />
-                  (713) 555-0123
+                  +1 (305) 216-3246
                 </a>
                 <div className="px-4">
                   <Button

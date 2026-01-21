@@ -3,12 +3,9 @@
 import {
   Phone,
   Mail,
-  MapPin,
-  Facebook,
-  Instagram,
-  Linkedin,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 const footerLinks = {
@@ -32,11 +29,6 @@ const footerLinks = {
   ],
 };
 
-const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-];
 
 export function Footer() {
   const handleNavClick = (href: string) => {
@@ -56,9 +48,13 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center font-display font-bold text-lg">
-                Z
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="Zena Construction"
+                width={48}
+                height={48}
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-display font-semibold">
                 Zena Construction
               </span>
@@ -69,14 +65,14 @@ export function Footer() {
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-3 mb-6">
+            <div className="space-y-3">
               <a
-                href="tel:+17135550123"
+                href="tel:+13052163246"
                 className="flex items-center gap-3 hover:text-primary-400 transition-colors"
                 style={{ color: '#b8b8c1' }}
               >
                 <Phone className="w-5 h-5" />
-                (713) 555-0123
+                +1 (305) 216-3246
               </a>
               <a
                 href="mailto:info@zenaconstruction.com"
@@ -86,32 +82,6 @@ export function Footer() {
                 <Mail className="w-5 h-5" />
                 info@zenaconstruction.com
               </a>
-              <div className="flex items-start gap-3" style={{ color: '#b8b8c1' }}>
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>
-                  1234 Main Street, Suite 500<br />
-                  Houston, TX 77002
-                </span>
-              </div>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex gap-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-10 h-10 hover:bg-primary-500 rounded-lg
-                               flex items-center justify-center transition-colors"
-                  style={{ backgroundColor: '#41414b' }}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
             </div>
           </div>
 
