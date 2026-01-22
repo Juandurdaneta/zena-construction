@@ -50,9 +50,9 @@ ${propertyDescription || message || "No additional details provided"}
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      console.error("Resend error:", JSON.stringify(error, null, 2));
       return NextResponse.json(
-        { error: "Failed to send email" },
+        { error: "Failed to send email", details: error.message },
         { status: 500 }
       );
     }
