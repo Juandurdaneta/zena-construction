@@ -1,7 +1,4 @@
-import { Resend } from "resend";
 import { NextResponse } from "next/server";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 interface ContactFormData {
   name: string;
@@ -20,39 +17,31 @@ export async function POST(request: Request) {
 
     const { name, email, phone, address, projectType, propertyType, propertyDescription, message } = data;
 
-    // Build the email content
-    const emailContent = `
-New Contact Form Submission from Zena Construction Website
-
-Contact Information:
---------------------
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-${address ? `Property Address: ${address}` : ""}
-
-Project Details:
-----------------
-${projectType ? `Project Type: ${projectType}` : ""}
-${propertyType ? `Property Type: ${propertyType}` : ""}
-
-Message/Description:
---------------------
-${propertyDescription || message || "No additional details provided"}
-    `.trim();
-
-    const { error } = await resend.emails.send({
-      from: "Zena Construction Website <onboarding@resend.dev>",
-      to: "info@zenaconstruction.com",
-      replyTo: email,
-      subject: `New Property Evaluation Request from ${name}`,
-      text: emailContent,
+    // Send to Web3Forms
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.WEB3FORMS_ACCESS_KEY,
+        subject: `New Property Evaluation Request from ${name}`,
+        from_name: "Zena Construction Website",
+        name,
+        email,
+        phone,
+        address: address || "Not provided",
+        project_type: projectType || propertyType || "Not specified",
+        message: propertyDescription || message || "No additional details provided",
+      }),
     });
 
-    if (error) {
-      console.error("Resend error:", JSON.stringify(error, null, 2));
+    const result = await response.json();
+
+    if (!result.success) {
+      console.error("Web3Forms error:", result);
       return NextResponse.json(
-        { error: "Failed to send email", details: error.message },
+        { error: "Failed to send email", details: result.message },
         { status: 500 }
       );
     }
