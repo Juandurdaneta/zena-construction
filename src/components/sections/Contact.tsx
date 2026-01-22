@@ -64,11 +64,24 @@ export function Contact() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

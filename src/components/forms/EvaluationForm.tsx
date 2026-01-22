@@ -27,12 +27,25 @@ export function EvaluationForm() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    reset();
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setIsSubmitted(true);
+      reset();
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
