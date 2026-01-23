@@ -55,7 +55,7 @@ export function ContactCTA() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          access_key: "edde0732-14be-4472-a979-50cfc7cf57e4",
           subject: `New Property Evaluation Request from ${data.name}`,
           from_name: "Zena Construction Website",
           ...data,
