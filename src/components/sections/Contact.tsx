@@ -65,14 +65,20 @@ export function Contact() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          subject: `New Property Evaluation Request from ${data.name}`,
+          from_name: "Zena Construction Website",
+          ...data,
+        }),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
+      const result = await response.json();
+      if (!result.success) {
+        throw new Error(result.message || "Failed to submit form");
       }
 
       setIsSubmitted(true);
