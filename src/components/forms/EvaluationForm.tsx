@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
-import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Send, AlertCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 interface FormData {
@@ -15,18 +14,15 @@ interface FormData {
 }
 
 export function EvaluationForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    reset,
+    formState: { errors, isSubmitting },
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -44,42 +40,12 @@ export function EvaluationForm() {
         throw new Error(result.message || "Failed to submit form");
       }
 
-      setIsSubmitted(true);
-      reset();
+      router.push("/thank-you");
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was an error submitting your request. Please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
   };
-
-  if (isSubmitted) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="text-center py-12"
-      >
-        <div className="w-20 h-20 bg-trust-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle className="w-10 h-10 text-trust-600" />
-        </div>
-        <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-3">
-          Request Received!
-        </h3>
-        <p className="text-charcoal-600 mb-6 max-w-md mx-auto">
-          Thank you for your interest! Our team will contact you within 24 hours 
-          to schedule your free property evaluation.
-        </p>
-        <button
-          onClick={() => setIsSubmitted(false)}
-          className="text-primary-600 font-medium hover:text-primary-700 underline"
-        >
-          Submit another request
-        </button>
-      </motion.div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">

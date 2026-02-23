@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import { useForm } from "react-hook-form";
 import {
-  CheckCircle2,
   Eye,
   GraduationCap,
   DollarSign,
@@ -41,7 +41,7 @@ const benefits = [
 export function ContactCTA() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const router = useRouter();
 
   const {
     register,
@@ -67,7 +67,7 @@ export function ContactCTA() {
         throw new Error(result.message || "Failed to submit form");
       }
 
-      setIsSubmitted(true);
+      router.push("/thank-you");
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was an error submitting your request. Please try again.");
@@ -141,25 +141,6 @@ export function ContactCTA() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <div className="bg-white rounded-3xl shadow-soft-lg p-8 md:p-10 border border-charcoal-100">
-            {isSubmitted ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-8"
-              >
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle2 className="w-8 h-8 text-primary-500" />
-                </div>
-                <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-3">
-                  Thank You!
-                </h3>
-                <p className="text-charcoal-600 leading-relaxed">
-                  We&apos;ve received your request. A member of our team will contact 
-                  you within 24 hours to schedule your free property evaluation.
-                </p>
-              </motion.div>
-            ) : (
-              <>
                 <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-2">
                   Request Your Evaluation
                 </h3>
@@ -274,8 +255,6 @@ export function ContactCTA() {
                     We respect your privacy. No spam, ever.
                   </p>
                 </form>
-              </>
-            )}
           </div>
         </motion.div>
       </div>
