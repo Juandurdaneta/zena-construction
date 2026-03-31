@@ -2,16 +2,15 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
 const painPoints = [
-  "Visible damage or storm wear that keeps you up during weather warnings",
-  "Past contractor nightmares — delays, poor communication, failed work",
-  "Terrified of making a $30K+ mistake you'll regret for decades",
-  'Your home sits in "someday we\'ll handle this" limbo',
-  "Wildly different quotes with no idea what's actually fair",
+  "Worried about your property\u2019s condition \u2014 visible damage, aging materials, or storm wear that keeps you up during weather warnings",
+  "Exhausted from past nightmares \u2014 timeline delays, poor communication, or work that looked fine until it failed",
+  "Paralyzed by a major decision \u2014 whether fixing critical damage or planning upgrades, you\u2019re terrified of making a $30K+ mistake you\u2019ll regret for decades",
+  "Frustrated watching neighbors improve their homes \u2014 while yours sits in \u201Csomeday we\u2019ll handle this\u201D limbo as problems potentially worsen",
+  "Confused by contradictory pricing \u2014 one contractor quotes $18K, another $42K for \u201Cthe same work,\u201D and you have no idea what accounts for the difference",
 ];
 
 export function PainPoints() {
@@ -38,7 +37,7 @@ export function PainPoints() {
             Sound Familiar?
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-white leading-tight">
-            You&apos;re Not Alone
+            Most Homeowners Are Struggling With the Same Issues..
           </h2>
         </motion.div>
 
@@ -79,7 +78,7 @@ export function PainPoints() {
           <p className="text-xl md:text-2xl text-white/80 font-display leading-relaxed mb-8">
             Here&apos;s the truth:{" "}
             <span className="text-primary-400 font-semibold">It&apos;s not your fault.</span>{" "}
-            The construction industry makes it nearly impossible to make confident decisions.
+            The construction industry makes it nearly impossible to make confident decisions, whether you&apos;re fixing urgent problems or planning strategic upgrades.
           </p>
 
           <Button

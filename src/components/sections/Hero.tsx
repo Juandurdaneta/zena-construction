@@ -10,7 +10,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
@@ -40,7 +40,7 @@ export function Hero() {
           >
             <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
             <span className="text-primary-300 text-sm font-medium">
-              Texas&apos;s Trusted Construction Partner
+              Zena Construction
             </span>
           </motion.div>
 
@@ -62,6 +62,7 @@ export function Hero() {
                 className="absolute bottom-2 left-0 right-0 h-3 bg-primary-500/30 -rotate-1 origin-left"
               />
             </span>
+            {" "}Without Contractor Nightmares, Budget Surprises, or 30 Years of Buyer&apos;s Remorse
           </motion.h1>
 
           {/* Subheadline */}
@@ -72,8 +73,7 @@ export function Hero() {
             className="text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
-            Without contractor nightmares, budget surprises, or 30 years of buyer&apos;s remorse. 
-            Discover exactly what your home needs with{" "}
+            Discover exactly what your home needs, what it will cost, and how to add $60K+ in value, with{" "}
             <span className="text-white font-medium">zero obligation</span> and{" "}
             <span className="text-white font-medium">complete transparency</span>.
           </motion.p>

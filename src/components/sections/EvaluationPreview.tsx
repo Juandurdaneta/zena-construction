@@ -19,7 +19,7 @@ const evaluationPoints = [
     icon: Eye,
     number: "01",
     title: "Hidden Damage Warning",
-    highlight: "$15K+ in Hidden Damage",
+    highlight: "$15K+ in Hidden Damage You Can\u2019t See",
     description:
       "Can you see your roof deck? Your attic ventilation? Water behind your siding? We use thermal imaging and drones to reveal damage most homeowners never discover until it becomes an expensive emergency.",
     details: [
@@ -31,14 +31,14 @@ const evaluationPoints = [
   {
     icon: Lightbulb,
     number: "02",
-    title: "Material Selection Strategy",
+    title: "Proven Material Selection Strategies",
     highlight: "Avoid $10K Mistakes",
     description:
-      "We'll reveal the exact framework we use to match materials to your situation: when premium makes sense, when mid-grade is smarter, and how to avoid both overspending AND going dangerously cheap.",
+      "We\u2019ll reveal the exact framework we use to match materials to your situation: when premium makes sense, when mid-grade is smarter, and how to avoid both overspending AND going dangerously cheap.",
     details: [
       "Side-by-side material comparisons tailored to your property",
       "Cost-benefit analysis for each tier of materials",
-      "Long-term value projections based on Houston's climate",
+      "Long-term value projections based on Houston\u2019s climate",
     ],
   },
   {
@@ -47,7 +47,7 @@ const evaluationPoints = [
     title: "5 Devastating Mistakes",
     highlight: "Nearly Every Houston Property Owner Makes",
     description:
-      "Almost everyone planning roofing or construction makes these common yet costly mistakes: choosing on price alone, accepting vague specs, ignoring ventilation, trusting 'per square' pricing, making color choices without design guidance.",
+      "Almost everyone planning roofing or construction makes these common yet costly mistakes: choosing on price alone, accepting vague specs, ignoring ventilation, trusting \u2018per square\u2019 pricing, making color choices without design guidance. Find out how to avoid them all.",
     details: [
       "How to spot red flags in contractor bids",
       "Questions to ask that reveal expertise (or lack thereof)",
@@ -57,10 +57,10 @@ const evaluationPoints = [
   {
     icon: TrendingUp,
     number: "04",
-    title: "3 Value-Add Material Decisions",
+    title: "3 Material Decisions That Add $40K+",
     highlight: "$40K+ Property Value Increase",
     description:
-      "These strategic choices cost surprisingly little more upfront but dramatically increase curb appeal and resale value most contractors never mention them because they don't understand property investment strategy.",
+      "These strategic choices cost surprisingly little more upfront but dramatically increase curb appeal and resale value; most contractors never mention them because they don\u2019t understand property investment strategy.",
     details: [
       "Which upgrades deliver the highest ROI",
       "Design choices that boost curb appeal significantly",
@@ -176,7 +176,7 @@ export function EvaluationPreview() {
     <Section background="gradient" paddingY="lg" id="evaluation">
       <SectionHeader
         label="Free Property Evaluation"
-        title="Here's What We'll Cover In Your FREE Property Evaluation..."
+        title="Here's What We'll Cover In Your FREE Property Evaluation\u2026"
         subtitle="A 90-minute session that takes you from confusion to complete clarity."
       />
 
@@ -203,7 +203,7 @@ export function EvaluationPreview() {
           <span className="text-2xl font-display font-bold">
             $1,200
           </span>
-          <span style={{ color: '#91919f' }}>•</span>
+          <span style={{ color: '#91919f' }}>&bull;</span>
           <span className="font-semibold text-primary-400" >Yours FREE</span>
         </div>
 
@@ -213,7 +213,7 @@ export function EvaluationPreview() {
             icon={<ArrowRight className="w-5 h-5" />}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Claim Your Free Evaluation
+            Get Your Free Property Evaluation
           </Button>
         </div>
       </motion.div>
