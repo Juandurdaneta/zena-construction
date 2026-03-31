@@ -3,32 +3,32 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Zena Construction | Houston's Trusted Roofing & Construction Partner",
+  title: "Zena Construction | Houston's Trusted Home Remodeling Partner",
   description:
-    "Transform your property into your best investment without contractor nightmares, budget surprises, or buyer's remorse. Free property evaluations valued at $1,200. IICRC Certified with 10+ years experience.",
+    "Transform your home into your dream space without contractor nightmares, budget surprises, or years of regret. Free remodeling consultations. IICRC Certified with 10+ years experience serving Houston.",
   keywords: [
-    "Houston roofing",
-    "Houston construction",
-    "roof repair Houston",
-    "storm damage restoration",
-    "property evaluation",
+    "Houston remodeling",
+    "kitchen remodel Houston",
+    "bathroom remodel Houston",
+    "whole home remodel",
     "Houston contractor",
-    "roofing company Houston TX",
+    "home renovation Houston TX",
+    "remodeling company Houston",
   ],
   authors: [{ name: "Zena Construction" }],
   openGraph: {
-    title: "Zena Construction | Houston's Trusted Construction Partner",
+    title: "Zena Construction | Houston's Trusted Home Remodeling Partner",
     description:
-      "Transform your property into your best investment. Free property evaluations valued at $1,200.",
+      "Transform your home into your dream space. Free remodeling consultations for Houston homeowners.",
     type: "website",
     locale: "en_US",
     siteName: "Zena Construction",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zena Construction | Houston's Trusted Construction Partner",
+    title: "Zena Construction | Houston's Trusted Home Remodeling Partner",
     description:
-      "Transform your property into your best investment. Free property evaluations valued at $1,200.",
+      "Transform your home into your dream space. Free remodeling consultations for Houston homeowners.",
   },
   robots: {
     index: true,

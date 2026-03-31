@@ -23,7 +23,7 @@ const testimonials = [
     rating: 5,
     project: "Insurance Claim & Restoration",
     content:
-      "I cannot say enough great things about Jose and Zena Construction! Communication was excellent and Jose walked me through every step, including handling my insurance company! Once my insurance claim was approved, he showed up quickly to come up with a game plan and then he had guys here to start the work the very next day!! I could not be more thankful for Zena Construction and will absolutely be hiring them when I am ready to renovate my home!",
+      "I cannot say enough great things about Jose and Zena Construction! Communication was excellent and Jose walked me through every step, including handling my insurance company! Once my claim was approved, he showed up quickly to come up with a game plan and then he had guys here to start the work the very next day!! I could not be more thankful for Zena Construction and will absolutely be hiring them when I am ready to renovate my home!",
     highlight: "Excellent communication",
   },
 ];
@@ -51,8 +51,8 @@ export function Testimonials() {
     <Section background="cream" paddingY="lg" id="testimonials">
       <SectionHeader
         label="Client Stories"
-        title="Here's What Houston Homeowners Say About Their Zena Experience..."
-        subtitle="Real results from real homeowners who trusted us with their properties."
+        title="Here's What Homeowners Say About Their Zena Remodeling Experience..."
+        subtitle="Real results from real homeowners who trusted us with their homes."
       />
 
       <div ref={ref} className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
@@ -118,7 +118,7 @@ export function Testimonials() {
           icon={<ArrowRight className="w-5 h-5" />}
           onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
         >
-          Get Your Free Property Evaluation
+          Start Your Dream Remodel Today
         </Button>
       </motion.div>
     </Section>

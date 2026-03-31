@@ -4,6 +4,7 @@ export { Trust } from "./Trust";
 export { EvaluationPreview } from "./EvaluationPreview";
 export { FailureStats } from "./FailureStats";
 export { Process } from "./Process";
+export { ValueStack2 } from "./ValueStack2";
 export { Guarantee } from "./Guarantee";
 export { Testimonials } from "./Testimonials";
 export { Portfolio } from "./Portfolio";

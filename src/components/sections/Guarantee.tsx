@@ -9,19 +9,19 @@ import { ArrowRight } from "lucide-react";
 
 const guarantees = [
   {
-    title: "Roofing Workmanship",
+    title: "Major Project Workmanship",
     duration: "3-5 Year",
-    description: "Complete coverage on all roofing installation and repairs",
+    description: "Complete workmanship guarantee on kitchen, bathroom, and whole-home remodels",
   },
   {
-    title: "Construction & Restoration",
+    title: "Smaller Renovations",
     duration: "1-3 Year",
-    description: "Full workmanship guarantee on all construction and restoration work",
+    description: "Full workmanship guarantee on all smaller renovation projects",
   },
   {
-    title: "Material Warranties",
-    duration: "Manufacturer",
-    description: "Additional manufacturer warranties on all premium materials",
+    title: "Decision Confidence Promise",
+    duration: "100%",
+    description: "If after your 90-minute consultation you don\u2019t feel 100% confident, we\u2019ll give you a $500 credit toward any future service",
   },
 ];
 
@@ -45,13 +45,17 @@ export function Guarantee() {
           >
             <span className="section-label" style={{ color: '#D4BC8C' }}>Peace of Mind</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-white leading-tight mb-6">
-              Our Rock-Solid{" "}
+              Our Rock-Solid Workmanship{" "}
               <span style={{ color: '#D4BC8C' }}>Guarantee</span>
             </h2>
+            <p className="text-lg leading-relaxed mb-4" style={{ color: '#b8b8c1' }}>
+              Every Zena Construction remodel comes with real protection: 3-5 year
+              workmanship guarantees on major projects and 1-3 year guarantees on
+              smaller renovations. No fine print, no games, just work we stand behind.
+            </p>
             <p className="text-lg leading-relaxed mb-8" style={{ color: '#b8b8c1' }}>
-              At Zena Construction, every project is backed by industry-leading
-              warranties: 3-5 year workmanship guarantees on roofing and 1-3 year
-              guarantees on construction and restoration work.
+              Plus, if you choose us and aren&apos;t satisfied with our communication
+              before we start the project, we&apos;ll refund your deposit, no questions asked.
             </p>
 
             {/* Guarantee Cards */}
@@ -86,7 +90,7 @@ export function Guarantee() {
               icon={<ArrowRight className="w-5 h-5" />}
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Get Your Free Property Evaluation
+              Start Your Dream Remodel Today
             </Button>
           </motion.div>
 

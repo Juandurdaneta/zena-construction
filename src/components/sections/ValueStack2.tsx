@@ -3,10 +3,10 @@
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import {
-  Eye,
-  Lightbulb,
-  AlertOctagon,
-  TrendingUp,
+  Search,
+  Clock,
+  Paintbrush,
+  Layout,
   ChevronDown,
   Sparkles,
 } from "lucide-react";
@@ -14,80 +14,67 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
-const evaluationPoints = [
+const valuePoints = [
   {
-    icon: Eye,
+    icon: Search,
     number: "01",
-    title: "Your Remodel Could Cost $20K+ More Than Quoted",
-    highlight: "WARNING: Hidden Costs",
+    title: 'The 7-Question "Remodeling Contractor BS Detector"',
+    highlight: "Separates Quality From Smooth Talking",
     description:
-      "Hidden plumbing issues, electrical upgrades, structural modifications\u2014we assess everything during initial consultation so there are no mid-project surprises that blow your budget.",
+      "These specific questions reveal contractor licensing, insurance validity, subcontractor vs. in-house crews, payment schedules, and change order policies\u201490% of homeowners never ask them.",
     details: [
-      "Complete plumbing and electrical assessment before work begins",
-      "Structural evaluation to identify potential modifications needed",
-      "Detailed scope documentation to prevent surprise change orders",
+      "Exact questions to ask about licensing and insurance validity",
+      "How to evaluate subcontractor vs. in-house crew quality",
+      "Payment schedule and change order red flags to watch for",
     ],
   },
   {
-    icon: Lightbulb,
+    icon: Clock,
     number: "02",
-    title: "Proven Material Selection Strategy",
-    highlight: "Designer Results Without Designer Prices",
+    title: "The Secret Timeline Your Remodel Should Actually Take",
+    highlight: "Spot Over-Promising Contractors",
     description:
-      "We\u2019ll reveal the exact framework we use: when to splurge on impact materials (countertops, fixtures), when builder-grade is perfectly fine (inside cabinets), and how to maximize every dollar.",
+      "How long should your project REALLY take? We\u2019ll give you realistic timelines based on scope, so you can immediately spot contractors who over-promise or stretch projects unnecessarily.",
     details: [
-      "Side-by-side material comparisons tailored to your project",
-      "Cost-benefit analysis showing where to invest and where to save",
-      "100+ families have used this strategy for designer results on a budget",
+      "Realistic timelines for kitchen, bathroom, and whole-home remodels",
+      "Warning signs of contractors who over-promise on schedules",
+      "How to identify projects being unnecessarily stretched out",
     ],
   },
   {
-    icon: AlertOctagon,
+    icon: Paintbrush,
     number: "03",
-    title: "5 Devastating Mistakes Nearly Every Homeowner Makes",
-    highlight: "Avoid Costly Remodeling Errors",
+    title: "What NEVER To Do When Choosing Finishes",
+    highlight: "Avoid This Selection Mistake",
     description:
-      "Choosing contractors on price alone, not planning for hidden costs, skipping the design phase, making permanent fixture choices without seeing samples in your lighting, trusting vague timelines. Find out how to avoid them all.",
+      "Please, never make this selection mistake: choosing materials in showroom lighting that look completely different in your home. We\u2019ll show you exactly how to test samples in your actual space.",
     details: [
-      "How to spot red flags in contractor bids and vague quotes",
-      "Why skipping the design phase costs you more long-term",
-      "The fixture selection mistake that leads to years of regret",
+      "Why showroom lighting deceives even experienced designers",
+      "The exact process for testing samples in your home\u2019s lighting",
+      "How to make finish selections you\u2019ll love for decades",
     ],
   },
   {
-    icon: TrendingUp,
+    icon: Layout,
     number: "04",
-    title: "3 Design Decisions That Add $50K+ To Your Home Value",
-    highlight: "$50K+ Home Value Increase",
+    title: 'The "Hidden" Decision That Determines If You Love Your Remodel in 10 Years',
+    highlight: "It\u2019s Not the Countertops or Cabinets",
     description:
-      "Strategic choices in layout, materials, and finishes that dramatically increase resale value and daily enjoyment. Most contractors never mention them because they don\u2019t understand property investment strategy.",
+      "It\u2019s layout and workflow. 80% of homeowners focus only on aesthetics and ignore functionality, then hate using their \u201Cbeautiful\u201D kitchen daily.",
     details: [
-      "Layout changes that transform both functionality and value",
-      "Material and finish selections that appraisers notice immediately",
-      "Design decisions that boost daily enjoyment and resale price",
-    ],
-  },
-  {
-    icon: Eye,
-    number: "05",
-    title: "Why Kitchen Remodel Pricing Varies By $40K",
-    highlight: "The Cold Hard TRUTH",
-    description:
-      "One contractor quotes $35K, another $75K. We\u2019ll show you exactly what accounts for the difference: cabinet quality, countertop materials, labor standards, and where cheap pricing will cost you more long-term.",
-    details: [
-      "Cabinet quality tiers and what you actually get at each price point",
-      "How labor standards affect the longevity of your remodel",
-      "Where cheap pricing will cost you more in the long run",
+      "Why layout and workflow matter more than surface finishes",
+      "The functionality test that predicts long-term satisfaction",
+      "How to balance aesthetics with daily usability",
     ],
   },
 ];
 
-function EvaluationCard({
+function ValueCard({
   point,
   index,
   isInView,
 }: {
-  point: (typeof evaluationPoints)[0];
+  point: (typeof valuePoints)[0];
   index: number;
   isInView: boolean;
 }) {
@@ -105,19 +92,16 @@ function EvaluationCard({
         className={`bg-white rounded-2xl border-2 transition-all duration-300 overflow-hidden
                     ${isExpanded ? "border-primary-400 shadow-soft-lg" : "border-charcoal-100 hover:border-primary-200"}`}
       >
-        {/* Header - Always Visible */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full p-6 md:p-8 text-left flex items-start gap-5"
         >
-          {/* Number Badge */}
           <div className="flex-shrink-0">
             <span className="block text-4xl font-display font-bold text-charcoal-200 group-hover:text-primary-300 transition-colors">
               {point.number}
             </span>
           </div>
 
-          {/* Content */}
           <div className="flex-grow min-w-0">
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -135,7 +119,6 @@ function EvaluationCard({
                 </p>
               </div>
 
-              {/* Expand Icon */}
               <motion.div
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
@@ -148,7 +131,6 @@ function EvaluationCard({
           </div>
         </button>
 
-        {/* Expandable Content */}
         <AnimatePresence>
           {isExpanded && (
             <motion.div
@@ -181,21 +163,20 @@ function EvaluationCard({
   );
 }
 
-export function EvaluationPreview() {
+export function ValueStack2() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <Section background="gradient" paddingY="lg" id="evaluation">
+    <Section background="gradient" paddingY="lg" id="value-stack-2">
       <SectionHeader
-        label="Free Remodeling Consultation"
-        title="Here's A Brief Outline Of What We'll Cover In Your FREE Remodeling Consultation..."
-        subtitle="A 90-minute session that takes you from confusion to complete clarity."
+        label="Consultation Preview"
+        title="Here's Another Taste Of What You Can Expect When You Book Your Complimentary Consultation..."
       />
 
       <div ref={ref} className="space-y-4 mb-12">
-        {evaluationPoints.map((point, index) => (
-          <EvaluationCard
+        {valuePoints.map((point, index) => (
+          <ValueCard
             key={index}
             point={point}
             index={index}
@@ -204,31 +185,19 @@ export function EvaluationPreview() {
         ))}
       </div>
 
-      {/* Value Badge */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
         transition={{ delay: 0.5, duration: 0.4 }}
         className="text-center"
       >
-        <div className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full mb-8" style={{ backgroundColor: '#1a1a1f' }}>
-          <span style={{ color: '#91919f' }}>Total Value:</span>
-          <span className="text-2xl font-display font-bold">
-            $1,200
-          </span>
-          <span style={{ color: '#91919f' }}>&bull;</span>
-          <span className="font-semibold text-primary-400" >Yours FREE</span>
-        </div>
-
-        <div className="block">
-          <Button
-            size="lg"
-            icon={<ArrowRight className="w-5 h-5" />}
-            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Start Your Dream Remodel Today
-          </Button>
-        </div>
+        <Button
+          size="lg"
+          icon={<ArrowRight className="w-5 h-5" />}
+          onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+        >
+          Start Your Dream Remodel Today
+        </Button>
       </motion.div>
     </Section>
   );

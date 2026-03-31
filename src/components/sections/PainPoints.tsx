@@ -6,11 +6,10 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
 const painPoints = [
-  "Worried about your property\u2019s condition \u2014 visible damage, aging materials, or storm wear that keeps you up during weather warnings",
-  "Exhausted from past nightmares \u2014 timeline delays, poor communication, or work that looked fine until it failed",
-  "Paralyzed by a major decision \u2014 whether fixing critical damage or planning upgrades, you\u2019re terrified of making a $30K+ mistake you\u2019ll regret for decades",
-  "Frustrated watching neighbors improve their homes \u2014 while yours sits in \u201Csomeday we\u2019ll handle this\u201D limbo as problems potentially worsen",
-  "Confused by contradictory pricing \u2014 one contractor quotes $18K, another $42K for \u201Cthe same work,\u201D and you have no idea what accounts for the difference",
+  "Worried about choosing the wrong contractor\u2014you\u2019ve heard the horror stories: projects that take 6 months instead of 6 weeks, budgets that double mid-project, or work that looks good until you notice the shortcuts",
+  "Exhausted from past renovation nightmares\u2014timeline delays, poor communication, subcontractors who disappear for weeks, or finished work that doesn\u2019t match what you envisioned",
+  "Paralyzed by a major decision\u2014whether updating a kitchen, renovating a bathroom, or planning a whole-home remodel, you\u2019re terrified of making a $40K-$80K mistake you\u2019ll live with for decades",
+  "Misled by pricing\u2014one contractor quotes $35K for your kitchen, another quotes $75K for \u201Cthe same work,\u201D and you have no idea what accounts for the $40K difference",
 ];
 
 export function PainPoints() {
@@ -37,7 +36,7 @@ export function PainPoints() {
             Sound Familiar?
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-white leading-tight">
-            Most Homeowners Are Struggling With the Same Issues..
+            Most Homeowners Are Struggling With the Same Remodeling Issues...
           </h2>
         </motion.div>
 
@@ -78,7 +77,7 @@ export function PainPoints() {
           <p className="text-xl md:text-2xl text-white/80 font-display leading-relaxed mb-8">
             Here&apos;s the truth:{" "}
             <span className="text-primary-400 font-semibold">It&apos;s not your fault.</span>{" "}
-            The construction industry makes it nearly impossible to make confident decisions, whether you&apos;re fixing urgent problems or planning strategic upgrades.
+            The remodeling industry makes it nearly impossible to make confident decisions. Contractors use different specs, hide costs in vague line items, and make promises they don&apos;t keep.
           </p>
 
           <Button
@@ -87,7 +86,7 @@ export function PainPoints() {
             icon={<ArrowRight className="w-5 h-5" />}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Get Your Free Property Evaluation
+            Start Your Dream Remodel Today
           </Button>
         </motion.div>
       </div>
