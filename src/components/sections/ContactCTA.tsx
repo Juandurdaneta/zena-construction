@@ -28,25 +28,25 @@ interface FormData {
 const benefits = [
   {
     icon: Eye,
-    title: "Complete Property Assessment",
-    text: "Revealing damage you can\u2019t see from the ground",
+    title: "Complete Space Assessment",
+    text: "See what\u2019s actually possible within your home\u2019s structure and your budget",
   },
   {
     icon: GraduationCap,
     title: "Hands-on Material Education",
-    text: "Finally understand the difference between builder-grade, mid-grade, and premium materials",
+    text: "Finally understand the difference between builder-grade, mid-grade, and premium finishes in your actual lighting",
   },
   {
     icon: DollarSign,
     title: "Transparent Pricing Breakdown",
-    text: "Showing exactly where every dollar goes\u2014no hidden costs",
+    text: "Showing exactly where every dollar goes\u2014no hidden costs or surprise change orders",
   },
 ];
 
 const qualifications = [
-  "Serious about protecting or improving their property",
+  "Serious about creating their dream kitchen, bathroom, or whole-home remodel",
   "Ready to make confident decisions once they have clarity",
-  "Looking for a trusted partner",
+  "Looking for a trusted partner who delivers on promises",
   "Willing to invest in quality that lasts decades",
 ];
 
@@ -68,7 +68,7 @@ export function ContactCTA() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "edde0732-14be-4472-a979-50cfc7cf57e4",
-          subject: `New Property Evaluation Request from ${data.name}`,
+          subject: `New Remodeling Consultation Request from ${data.name}`,
           from_name: "Zena Construction Website",
           ...data,
         }),
@@ -98,7 +98,7 @@ export function ContactCTA() {
           <span className="section-label">Limited Availability</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-4">
             Claim Your{" "}
-            <span className="text-primary-500">FREE</span> Property Evaluation
+            <span className="text-primary-500">FREE</span> Remodeling Consultation
           </h2>
 
           {/* Value Badge */}
@@ -108,15 +108,14 @@ export function ContactCTA() {
           </div>
 
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
-            During your no-obligation evaluation, our certified experts will assess
-            your specific situation and show you exactly how to move forward with
-            complete confidence.
+            During your no-obligation consultation, our experts will assess your
+            space and show you exactly how to create the home you&apos;ve been dreaming of.
           </p>
 
           {/* Benefits */}
           <div className="space-y-4 mb-8">
             <h3 className="text-lg font-semibold text-charcoal-950">
-              Here&apos;s what you&apos;ll discover in your FREE evaluation:
+              Here&apos;s what you&apos;ll discover in your FREE consultation:
             </h3>
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
@@ -144,7 +143,7 @@ export function ContactCTA() {
           <div className="bg-charcoal-950 rounded-2xl p-6 mb-8">
             <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
               <Users className="w-5 h-5 text-primary-400" />
-              This is ONLY for Houston homeowners who are:
+              This is ONLY for homeowners who are:
             </h3>
             <ul className="space-y-3">
               {qualifications.map((qual, index) => (
@@ -160,7 +159,7 @@ export function ContactCTA() {
           <div className="flex items-center gap-2 text-primary-700 bg-primary-50 px-4 py-3 rounded-xl border border-primary-200">
             <Clock className="w-5 h-5 flex-shrink-0" />
             <span className="font-semibold">
-              Places are strictly limited to 5 residential clients per month.
+              Places are strictly limited to 5 clients per month.
             </span>
           </div>
         </motion.div>
@@ -173,7 +172,7 @@ export function ContactCTA() {
         >
           <div className="bg-white rounded-3xl shadow-soft-lg p-8 md:p-10 border border-charcoal-100">
                 <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-2">
-                  Request Your Evaluation
+                  Request Your Consultation
                 </h3>
                 <p className="text-charcoal-600 mb-8">
                   Fill out the form below and we&apos;ll contact you within 24 hours.
@@ -259,7 +258,7 @@ export function ContactCTA() {
                       {...register("propertyDescription")}
                       rows={4}
                       className="textarea-field"
-                      placeholder="Describe any concerns, visible damage, or improvements you're considering..."
+                      placeholder="Describe your remodeling project or goals..."
                     />
                   </div>
 
@@ -277,7 +276,7 @@ export function ContactCTA() {
                       )
                     }
                   >
-                    {isSubmitting ? "Submitting..." : "Get My Free Property Evaluation"}
+                    {isSubmitting ? "Submitting..." : "Start Your Dream Remodel Today"}
                   </Button>
 
                   {/* Trust Note */}

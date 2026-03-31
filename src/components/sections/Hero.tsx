@@ -52,9 +52,9 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6"
             style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}
           >
-            Transform Your Property Into Your{" "}
+            Transform Your Home Into Your{" "}
             <span className="relative">
-              <span className="relative z-10 text-primary-400">Best Investment</span>
+              <span className="relative z-10 text-primary-400">Dream Space</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -62,7 +62,7 @@ export function Hero() {
                 className="absolute bottom-2 left-0 right-0 h-3 bg-primary-500/30 -rotate-1 origin-left"
               />
             </span>
-            {" "}Without Contractor Nightmares, Budget Surprises, or 30 Years of Buyer&apos;s Remorse
+            {" "}Without Contractor Nightmares, Budget Surprises, or Years of Regret
           </motion.h1>
 
           {/* Subheadline */}
@@ -73,7 +73,7 @@ export function Hero() {
             className="text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
-            Discover exactly what your home needs, what it will cost, and how to add $60K+ in value, with{" "}
+            Discover exactly what your remodel needs, what it will cost, and how to add $60K+ in value with{" "}
             <span className="text-white font-medium">zero obligation</span> and{" "}
             <span className="text-white font-medium">complete transparency</span>.
           </motion.p>
@@ -90,7 +90,7 @@ export function Hero() {
               icon={<ArrowRight className="w-5 h-5" />}
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Get Your Free Property Evaluation
+              Start Your Dream Remodel Today
             </Button>
             <button
               onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}

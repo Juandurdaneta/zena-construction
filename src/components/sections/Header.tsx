@@ -121,7 +121,7 @@ export function Header() {
                 icon={<ArrowRight className="w-4 h-4" />}
                 onClick={() => handleNavClick("#contact", false)}
               >
-                Free Evaluation
+                Free Consultation
               </Button>
             </div>
 
@@ -196,7 +196,7 @@ export function Header() {
                     icon={<ArrowRight className="w-4 h-4" />}
                     onClick={() => handleNavClick("#contact", false)}
                   >
-                    Get Free Evaluation
+                    Get Free Consultation
                   </Button>
                 </div>
               </div>

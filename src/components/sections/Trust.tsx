@@ -3,10 +3,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
-  CloudRain,
+  Palette,
   Award,
   TrendingUp,
   Handshake,
+  Heart,
 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
@@ -14,35 +15,41 @@ import { ArrowRight } from "lucide-react";
 
 const benefits = [
   {
-    icon: CloudRain,
-    title: "Storm-Season Confidence",
+    icon: Palette,
+    title: "Design Clarity",
     description:
-      "Materials specifically engineered for Houston\u2019s extreme heat, humidity, and storms.",
+      "Know exactly what\u2019s possible in your space, what works with your home\u2019s structure, and what fits your budget.",
   },
   {
     icon: Award,
     title: "Quality That Lasts",
     description:
-      "Manufacturer-certified crews who install correctly the first time.",
+      "Premium materials, expert installation, and craftsmanship you\u2019ll be proud of for 30+ years.",
   },
   {
     icon: TrendingUp,
     title: "Property Value Protection",
     description:
-      "Clear ROI projections so you know exactly how your investment impacts property value.",
+      "Clear ROI projections showing how your remodel adds $40K-$80K to your home\u2019s worth.",
+  },
+  {
+    icon: Heart,
+    title: "Stress-Free Process",
+    description:
+      "No more wondering if you chose the right contractor, just clear timelines, daily updates, and work that exceeds expectations.",
   },
   {
     icon: Handshake,
-    title: "A Long-Term Partner",
+    title: "One Partner for Life",
     description:
-      "A trusted partner who knows your property inside and out for years to come.",
+      "Never search for contractors again\u2014one trusted relationship for all future home projects.",
   },
 ];
 
 const stats = [
   { value: "10+", label: "Years Experience" },
-  { value: "1,000+", label: "Properties Transformed" },
-  { value: "200+", label: "Families Guided" },
+  { value: "1,000+", label: "Homes Transformed" },
+  { value: "100+", label: "Families Guided" },
   { value: "98%", label: "Client Satisfaction" },
 ];
 
@@ -104,23 +111,27 @@ export function Trust() {
         >
           <span className="section-label">Why Choose Zena</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-charcoal-950 leading-tight mb-6">
-            You&apos;re Looking For Someone You Can{" "}
-            <span className="text-primary-500">Trust</span>
+            Finally... A Clear Path To Your Dream Home Without Months Of Remodeling{" "}
+            <span className="text-primary-500">Chaos</span>
           </h2>
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
-            You&apos;re not looking for the cheapest solution. You&apos;re looking for
-            someone you can trust to tell you the truth about what your property
+            You&apos;re not looking for the cheapest remodel. You&apos;re looking for
+            someone you can trust to tell you the truth about what your project
             needs, what it will cost, and what quality actually looks like.
           </p>
-          <p className="text-charcoal-600 leading-relaxed mb-8">
+          <p className="text-charcoal-600 leading-relaxed mb-4">
             In the last 10 years, we&apos;ve guided <strong>1,000+ homeowners</strong> through
-            this exact situation, whether they came to us with storm damage they weren&apos;t
-            sure how to assess, an aging roof they knew needed attention but kept postponing,
-            or a desire to upgrade their property but no idea where to start.
+            this exact situation, whether they came to us with:
           </p>
+          <ul className="text-charcoal-600 leading-relaxed mb-4 space-y-1 list-disc pl-5">
+            <li>An outdated kitchen they&apos;d been dreaming of renovating for years</li>
+            <li>A bathroom that needed complete transformation</li>
+            <li>A whole-home remodel to create their forever space</li>
+            <li>Fire or water damage requiring complete restoration</li>
+          </ul>
           <p className="text-charcoal-600 leading-relaxed mb-8">
-            We developed a <strong>proven evaluation process</strong> that takes you from
-            chaos to complete clarity in 90 minutes.
+            We developed a <strong>proven consultation process</strong> that takes you from
+            overwhelmed to confident in just 90 minutes.
           </p>
 
           {/* Benefits List */}
@@ -154,7 +165,7 @@ export function Trust() {
             icon={<ArrowRight className="w-5 h-5" />}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Get Your Free Property Evaluation
+            Start Your Dream Remodel Today
           </Button>
         </motion.div>
       </div>

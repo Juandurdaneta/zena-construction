@@ -10,10 +10,10 @@ import { Button } from "@/components/ui/Button";
 
 const footerLinks = {
   services: [
-    { label: "Roofing", href: "#" },
-    { label: "Storm Restoration", href: "#" },
-    { label: "Construction", href: "#" },
-    { label: "Property Evaluation", href: "#contact" },
+    { label: "Kitchen Remodeling", href: "#" },
+    { label: "Bathroom Remodeling", href: "#" },
+    { label: "Whole-Home Remodels", href: "#" },
+    { label: "Free Consultation", href: "#contact" },
   ],
   company: [
     { label: "About Us", href: "#trust" },
@@ -60,8 +60,8 @@ export function Footer() {
               </span>
             </div>
             <p className="leading-relaxed mb-6 max-w-sm" style={{ color: '#91919f' }}>
-              Houston&apos;s trusted partner for roofing, construction, and restoration. 
-              Helping homeowners make confident property decisions for over 10 years.
+              Houston&apos;s trusted partner for kitchen, bathroom, and whole-home remodels.
+              Helping homeowners create their dream spaces for over 10 years.
             </p>
 
             {/* Contact Info */}
@@ -131,14 +131,14 @@ export function Footer() {
               Get Started
             </h4>
             <p className="text-sm mb-4" style={{ color: '#91919f' }}>
-              Ready to transform your property? Schedule your free evaluation today.
+              Ready to transform your home? Schedule your free consultation today.
             </p>
             <Button
               size="sm"
               icon={<ArrowRight className="w-4 h-4" />}
               onClick={() => handleNavClick("#contact")}
             >
-              Free Evaluation
+              Free Consultation
             </Button>
           </div>
         </div>

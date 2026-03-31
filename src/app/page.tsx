@@ -6,6 +6,7 @@ import {
   EvaluationPreview,
   FailureStats,
   Process,
+  ValueStack2,
   Guarantee,
   Testimonials,
   Portfolio,
@@ -24,6 +25,7 @@ export default function Home() {
         <EvaluationPreview />
         <FailureStats />
         <Process />
+        <ValueStack2 />
         <Guarantee />
         <Testimonials />
         <Portfolio />

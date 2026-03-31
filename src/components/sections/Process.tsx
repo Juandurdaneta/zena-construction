@@ -16,37 +16,37 @@ import { ArrowRight } from "lucide-react";
 const steps = [
   {
     icon: Calendar,
-    title: "Schedule Your Evaluation",
+    title: "Schedule Your Consultation",
     description:
-      "Book your free 90-minute property evaluation at a time that works for you.",
+      "Book your free 90-minute remodeling consultation at a time that works for you.",
     color: "bg-amber-50 text-amber-700",
   },
   {
     icon: ClipboardCheck,
-    title: "Comprehensive Assessment",
+    title: "Space Assessment",
     description:
-      "Our certified experts inspect your property using thermal imaging and drone technology.",
+      "Our experts assess your space and show you what\u2019s possible within your home\u2019s structure and budget.",
     color: "bg-stone-100 text-stone-600",
   },
   {
     icon: FileText,
-    title: "Clear Recommendations",
+    title: "Design & Pricing Clarity",
     description:
-      "Receive transparent pricing you can trust, material education, and confidence to move forward without fear of expensive mistakes.",
+      "Get complete clarity on what your space can become, transparent pricing you can trust, and material education with samples.",
     color: "bg-amber-100 text-amber-800",
   },
   {
     icon: Wrench,
     title: "Expert Execution",
     description:
-      "If you choose to proceed, our manufacturer-certified crews deliver quality work.",
+      "Our expert crews deliver quality craftsmanship with clear timelines and daily updates.",
     color: "bg-stone-50 text-stone-700",
   },
   {
     icon: PartyPopper,
-    title: "Peace of Mind",
+    title: "Dream Space Delivered",
     description:
-      "Enjoy your transformed property backed by our rock-solid warranties.",
+      "Enjoy your transformed home backed by our rock-solid workmanship guarantee.",
     color: "bg-amber-50 text-amber-600",
   },
 ];
@@ -59,8 +59,8 @@ export function Process() {
     <Section background="light" paddingY="lg" id="process">
       <SectionHeader
         label="Our Process"
-        title="Simply Follow Our Proven Property Evaluation Process & You'll Avoid Costly Mistakes"
-        subtitle="Why waste months struggling to figure this out alone? You can save time and get dramatically better results when you get expert assessment and follow our proven decision framework."
+        title="Simply Follow Our Proven Remodeling Process & You'll Avoid Costly Mistakes"
+        subtitle="Why waste months struggling to figure this out alone? You can save time and get dramatically better results when you get expert design consultation and follow our proven remodeling framework."
       />
 
       <div ref={ref} className="relative">
@@ -159,10 +159,10 @@ export function Process() {
         className="mt-16 text-center max-w-3xl mx-auto"
       >
         <p className="text-xl text-charcoal-700 leading-relaxed font-display mb-8">
-          Are you ready to stop losing sleep over storm warnings, stop carrying the mental weight
-          of an unresolved decision, and{" "}
+          Are you ready to stop putting off the remodel you&apos;ve wanted for years, stop feeling
+          embarrassed about your outdated kitchen or bathroom, and{" "}
           <span className="text-charcoal-950 font-semibold">
-            finally make a confident choice?
+            finally create the home you&apos;re proud to show guests?
           </span>
         </p>
 
@@ -171,7 +171,7 @@ export function Process() {
           icon={<ArrowRight className="w-5 h-5" />}
           onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
         >
-          Get Your Free Property Evaluation
+          Start Your Dream Remodel Today
         </Button>
       </motion.div>
     </Section>
