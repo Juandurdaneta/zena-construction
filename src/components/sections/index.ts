@@ -2,6 +2,7 @@ export { Hero } from "./Hero";
 export { PainPoints } from "./PainPoints";
 export { Trust } from "./Trust";
 export { EvaluationPreview } from "./EvaluationPreview";
+export { FailureStats } from "./FailureStats";
 export { Process } from "./Process";
 export { Guarantee } from "./Guarantee";
 export { Testimonials } from "./Testimonials";

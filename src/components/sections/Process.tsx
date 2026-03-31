@@ -10,6 +10,8 @@ import {
   PartyPopper,
 } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { Button } from "@/components/ui/Button";
+import { ArrowRight } from "lucide-react";
 
 const steps = [
   {
@@ -30,7 +32,7 @@ const steps = [
     icon: FileText,
     title: "Clear Recommendations",
     description:
-      "Receive a detailed report with transparent pricing and material education.",
+      "Receive transparent pricing you can trust, material education, and confidence to move forward without fear of expensive mistakes.",
     color: "bg-amber-100 text-amber-800",
   },
   {
@@ -57,8 +59,8 @@ export function Process() {
     <Section background="light" paddingY="lg" id="process">
       <SectionHeader
         label="Our Process"
-        title="Simply Follow Our Proven Property Evaluation Process"
-        subtitle="You'll avoid costly mistakes and get dramatically better results when you follow our proven decision framework."
+        title="Simply Follow Our Proven Property Evaluation Process & You'll Avoid Costly Mistakes"
+        subtitle="Why waste months struggling to figure this out alone? You can save time and get dramatically better results when you get expert assessment and follow our proven decision framework."
       />
 
       <div ref={ref} className="relative">
@@ -156,13 +158,21 @@ export function Process() {
         transition={{ delay: 0.6, duration: 0.5 }}
         className="mt-16 text-center max-w-3xl mx-auto"
       >
-        <p className="text-xl text-charcoal-700 leading-relaxed font-display">
-          Stop losing sleep over storm warnings. Stop carrying the mental weight 
-          of an unresolved decision. 
+        <p className="text-xl text-charcoal-700 leading-relaxed font-display mb-8">
+          Are you ready to stop losing sleep over storm warnings, stop carrying the mental weight
+          of an unresolved decision, and{" "}
           <span className="text-charcoal-950 font-semibold">
-            {" "}Make a confident choice today.
+            finally make a confident choice?
           </span>
         </p>
+
+        <Button
+          size="lg"
+          icon={<ArrowRight className="w-5 h-5" />}
+          onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+        >
+          Get Your Free Property Evaluation
+        </Button>
       </motion.div>
     </Section>
   );

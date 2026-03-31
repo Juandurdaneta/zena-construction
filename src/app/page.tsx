@@ -4,6 +4,7 @@ import {
   PainPoints,
   Trust,
   EvaluationPreview,
+  FailureStats,
   Process,
   Guarantee,
   Testimonials,
@@ -21,6 +22,7 @@ export default function Home() {
         <PainPoints />
         <Trust />
         <EvaluationPreview />
+        <FailureStats />
         <Process />
         <Guarantee />
         <Testimonials />

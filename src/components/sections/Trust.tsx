@@ -7,7 +7,6 @@ import {
   Award,
   TrendingUp,
   Handshake,
-  CheckCircle2,
 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
@@ -18,7 +17,7 @@ const benefits = [
     icon: CloudRain,
     title: "Storm-Season Confidence",
     description:
-      "Materials specifically engineered for Houston's extreme heat, humidity, and storms.",
+      "Materials specifically engineered for Houston\u2019s extreme heat, humidity, and storms.",
   },
   {
     icon: Award,
@@ -34,7 +33,7 @@ const benefits = [
   },
   {
     icon: Handshake,
-    title: "Long-Term Partnership",
+    title: "A Long-Term Partner",
     description:
       "A trusted partner who knows your property inside and out for years to come.",
   },
@@ -109,14 +108,19 @@ export function Trust() {
             <span className="text-primary-500">Trust</span>
           </h2>
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
-            You&apos;re not looking for the cheapest solution. You&apos;re looking for 
-            someone you can trust to tell you the truth about what your property 
+            You&apos;re not looking for the cheapest solution. You&apos;re looking for
+            someone you can trust to tell you the truth about what your property
             needs, what it will cost, and what quality actually looks like.
           </p>
           <p className="text-charcoal-600 leading-relaxed mb-8">
-            In the last 10 years, we&apos;ve guided <strong>1,000+ homeowners</strong> through 
-            this exact situation—whether they came to us with storm damage, an aging 
-            roof, or a desire to upgrade with no idea where to start.
+            In the last 10 years, we&apos;ve guided <strong>1,000+ homeowners</strong> through
+            this exact situation, whether they came to us with storm damage they weren&apos;t
+            sure how to assess, an aging roof they knew needed attention but kept postponing,
+            or a desire to upgrade their property but no idea where to start.
+          </p>
+          <p className="text-charcoal-600 leading-relaxed mb-8">
+            We developed a <strong>proven evaluation process</strong> that takes you from
+            chaos to complete clarity in 90 minutes.
           </p>
 
           {/* Benefits List */}

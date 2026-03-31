@@ -21,7 +21,7 @@ export function TrustBadge({ icon, text, className = "" }: TrustBadgeProps) {
 
   return (
     <div
-      className={`inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm 
+      className={`inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm
                   rounded-full shadow-soft border border-charcoal-100 ${className}`}
     >
       <Icon className="w-4 h-4 text-trust-600" />
@@ -37,8 +37,8 @@ interface TrustBannerProps {
 
 export function TrustBanner({ className = "", variant = "light" }: TrustBannerProps) {
   const badges = [
-    { icon: "shield" as const, text: "IICRC Certified" },
-    { icon: "award" as const, text: "10+ Years Experience" },
+    { icon: "shield" as const, text: "IICRC Certified (Fire and Smoke Restoration)" },
+    { icon: "award" as const, text: "10 Years of Experience Serving Houston" },
     { icon: "users" as const, text: "1,000+ Properties Transformed" },
   ];
 
@@ -55,7 +55,7 @@ export function TrustBanner({ className = "", variant = "light" }: TrustBannerPr
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.5 }}
-      className={`flex flex-wrap items-center justify-center gap-4 md:gap-8 
+      className={`flex flex-wrap items-center justify-center gap-4 md:gap-8
                   px-6 py-4 rounded-2xl border ${bgStyles} ${className}`}
     >
       {badges.map((badge, index) => {

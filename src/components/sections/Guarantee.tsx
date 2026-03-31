@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Shield, CheckCircle, Award } from "lucide-react";
 import { Section } from "@/components/ui/Section";
+import { Button } from "@/components/ui/Button";
+import { ArrowRight } from "lucide-react";
 
 const guarantees = [
   {
@@ -14,7 +16,7 @@ const guarantees = [
   {
     title: "Construction & Restoration",
     duration: "1-3 Year",
-    description: "Full workmanship guarantee on all construction projects",
+    description: "Full workmanship guarantee on all construction and restoration work",
   },
   {
     title: "Material Warranties",
@@ -47,13 +49,13 @@ export function Guarantee() {
               <span style={{ color: '#D4BC8C' }}>Guarantee</span>
             </h2>
             <p className="text-lg leading-relaxed mb-8" style={{ color: '#b8b8c1' }}>
-              At Zena Construction, every project is backed by industry-leading 
-              warranties. We stand behind our work because we&apos;re confident in 
-              the quality we deliver.
+              At Zena Construction, every project is backed by industry-leading
+              warranties: 3-5 year workmanship guarantees on roofing and 1-3 year
+              guarantees on construction and restoration work.
             </p>
 
             {/* Guarantee Cards */}
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {guarantees.map((guarantee, index) => (
                 <motion.div
                   key={index}
@@ -78,6 +80,14 @@ export function Guarantee() {
                 </motion.div>
               ))}
             </div>
+
+            <Button
+              size="lg"
+              icon={<ArrowRight className="w-5 h-5" />}
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Get Your Free Property Evaluation
+            </Button>
           </motion.div>
 
           {/* Right - Badge/Visual */}

@@ -11,6 +11,9 @@ import {
   Shield,
   ArrowRight,
   Loader2,
+  CheckCircle,
+  Users,
+  Clock,
 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
@@ -25,18 +28,27 @@ interface FormData {
 const benefits = [
   {
     icon: Eye,
-    text: "Complete property assessment—revealing damage you can't see from the ground",
+    title: "Complete Property Assessment",
+    text: "Revealing damage you can\u2019t see from the ground",
   },
   {
     icon: GraduationCap,
-    text: "Hands-on material education—finally understand the difference between builder-grade, mid-grade, and premium",
+    title: "Hands-on Material Education",
+    text: "Finally understand the difference between builder-grade, mid-grade, and premium materials",
   },
   {
     icon: DollarSign,
-    text: "Transparent pricing breakdown showing exactly where every dollar goes—no hidden costs",
+    title: "Transparent Pricing Breakdown",
+    text: "Showing exactly where every dollar goes\u2014no hidden costs",
   },
 ];
 
+const qualifications = [
+  "Serious about protecting or improving their property",
+  "Ready to make confident decisions once they have clarity",
+  "Looking for a trusted partner",
+  "Willing to invest in quality that lasts decades",
+];
 
 export function ContactCTA() {
   const ref = useRef<HTMLDivElement>(null);
@@ -88,24 +100,23 @@ export function ContactCTA() {
             Claim Your{" "}
             <span className="text-primary-500">FREE</span> Property Evaluation
           </h2>
+
+          {/* Value Badge */}
+          <div className="inline-flex items-center gap-2 bg-charcoal-950 text-white px-4 py-2 rounded-full mb-6">
+            <span className="text-charcoal-400">Valued at</span>
+            <span className="text-xl font-display font-bold text-primary-400">$1,200</span>
+          </div>
+
           <p className="text-lg text-charcoal-600 leading-relaxed mb-8">
-            During your no-obligation evaluation, our certified experts will assess 
-            your specific situation and show you exactly how to move forward with 
+            During your no-obligation evaluation, our certified experts will assess
+            your specific situation and show you exactly how to move forward with
             complete confidence.
           </p>
 
-          {/* Value Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary-100 px-4 py-2 rounded-full mb-8">
-            <span className="text-charcoal-700">Total Value:</span>
-            <span className="text-xl font-display font-bold text-primary-400">$1,200</span>
-            <span className="text-charcoal-500">•</span>
-            <span className="text-primary-600 font-semibold">Yours FREE</span>
-          </div>
-
           {/* Benefits */}
-          <div className="space-y-4 mb-10">
+          <div className="space-y-4 mb-8">
             <h3 className="text-lg font-semibold text-charcoal-950">
-              Here&apos;s what you&apos;ll discover:
+              Here&apos;s what you&apos;ll discover in your FREE evaluation:
             </h3>
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
@@ -115,25 +126,45 @@ export function ContactCTA() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                  className="flex items-start gap-3"
+                  className="flex items-start gap-4 bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-charcoal-100"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-charcoal-100 rounded-lg flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-charcoal-600" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-primary-600" />
                   </div>
-                  <p className="text-charcoal-700 leading-relaxed">{benefit.text}</p>
+                  <div>
+                    <h4 className="font-semibold text-charcoal-950 mb-1">{benefit.title}</h4>
+                    <p className="text-sm text-charcoal-600">{benefit.text}</p>
+                  </div>
                 </motion.div>
               );
             })}
           </div>
 
+          {/* Qualification Box */}
+          <div className="bg-charcoal-950 rounded-2xl p-6 mb-8">
+            <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
+              <Users className="w-5 h-5 text-primary-400" />
+              This is ONLY for Houston homeowners who are:
+            </h3>
+            <ul className="space-y-3">
+              {qualifications.map((qual, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-trust-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal-300">{qual}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Scarcity */}
           <div className="flex items-center gap-2 text-primary-700 bg-primary-50 px-4 py-3 rounded-xl border border-primary-200">
-            <Shield className="w-5 h-5 flex-shrink-0" />
+            <Clock className="w-5 h-5 flex-shrink-0" />
             <span className="font-semibold">
               Places are strictly limited to 5 residential clients per month.
             </span>
           </div>
         </motion.div>
+
         {/* Right Column - Form */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
@@ -246,7 +277,7 @@ export function ContactCTA() {
                       )
                     }
                   >
-                    {isSubmitting ? "Submitting..." : "Get My Free Evaluation"}
+                    {isSubmitting ? "Submitting..." : "Get My Free Property Evaluation"}
                   </Button>
 
                   {/* Trust Note */}
