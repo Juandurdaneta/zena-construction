@@ -101,9 +101,9 @@ export function Guarantee() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="flex justify-center"
           >
-            <div className="relative">
+            <div className="relative max-w-full">
               {/* Main Badge */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80">
+              <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80">
                 {/* Outer Ring */}
                 <div className="absolute inset-0 rounded-full border-4 border-primary-500/30" />
 

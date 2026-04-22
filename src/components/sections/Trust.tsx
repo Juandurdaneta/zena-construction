@@ -72,7 +72,7 @@ export function Trust() {
             <img
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
               alt="Beautiful Houston home transformation"
-              className="w-full h-[400px] md:h-[500px] object-cover"
+              className="w-full h-[320px] sm:h-[400px] md:h-[500px] object-cover"
             />
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/40 to-transparent" />
@@ -83,15 +83,15 @@ export function Trust() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 20, scale: 0.95 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-white rounded-2xl p-6 shadow-soft-lg border border-charcoal-100"
+            className="relative mt-[-32px] mx-4 md:mx-0 md:absolute md:-bottom-6 md:-right-6 lg:bottom-8 lg:-right-8 bg-white rounded-2xl p-4 md:p-6 shadow-soft-lg border border-charcoal-100"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-4 md:grid-cols-2 gap-3 md:gap-4">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl md:text-3xl font-display font-bold text-primary-500">
+                  <div className="text-xl md:text-3xl font-display font-bold text-primary-500">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-charcoal-600 font-medium">
+                  <div className="text-[10px] md:text-xs text-charcoal-600 font-medium">
                     {stat.label}
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export function Trust() {
           </motion.div>
 
           {/* Decorative element */}
-          <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
+          <div className="hidden md:block absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
         </motion.div>
 
         {/* Right Column - Content */}

@@ -170,7 +170,7 @@ export function ContactCTA() {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <div className="bg-white rounded-3xl shadow-soft-lg p-8 md:p-10 border border-charcoal-100">
+          <div className="bg-white rounded-3xl shadow-soft-lg p-6 sm:p-8 md:p-10 border border-charcoal-100">
                 <h3 className="text-2xl font-display font-semibold text-charcoal-950 mb-2">
                   Request Your Consultation
                 </h3>

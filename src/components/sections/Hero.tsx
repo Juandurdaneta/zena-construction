@@ -29,8 +29,8 @@ export function Hero() {
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl" />
 
       {/* Content */}
-      <div className="relative z-10 section-padding container-wide pt-32 pb-20">
-        <div className="max-w-4xl">
+      <div className="relative z-10 section-padding container-wide pt-28 sm:pt-32 pb-20 w-full">
+        <div className="max-w-4xl w-full">
           {/* Pre-headline Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.1] mb-6"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold text-white leading-[1.15] sm:leading-[1.1] mb-6 break-words"
             style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}
           >
             Transform Your Home Into Your{" "}
@@ -70,7 +70,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
+            className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
             Discover exactly what your remodel needs, what it will cost, and how to add $60K+ in value with{" "}
@@ -83,10 +83,12 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-4 mb-12 w-full sm:w-auto"
           >
             <Button
               size="lg"
+              fullWidth
+              className="sm:w-auto"
               icon={<ArrowRight className="w-5 h-5" />}
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
@@ -94,7 +96,7 @@ export function Hero() {
             </Button>
             <button
               onClick={() => document.getElementById("testimonials")?.scrollIntoView({ behavior: "smooth" })}
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-lg font-semibold rounded-xl
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base sm:text-lg font-semibold rounded-xl
                          text-white border-2 border-white/50 bg-transparent
                          hover:bg-white/10 hover:border-white/70 transition-all duration-300"
             >

@@ -56,18 +56,19 @@ export function TrustBanner({ className = "", variant = "light" }: TrustBannerPr
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.5 }}
-      className={`flex flex-wrap items-center justify-center gap-4 md:gap-8
-                  px-6 py-4 rounded-2xl border ${bgStyles} ${className}`}
+      className={`grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap items-start lg:items-center
+                  lg:justify-center gap-3 sm:gap-4 lg:gap-6
+                  px-4 sm:px-6 py-4 rounded-2xl border ${bgStyles} ${className}`}
     >
       {badges.map((badge, index) => {
         const Icon = icons[badge.icon];
         return (
           <div
             key={index}
-            className={`flex items-center gap-2 ${textStyles}`}
+            className={`flex items-start gap-2 min-w-0 ${textStyles}`}
           >
-            <Icon className="w-5 h-5 text-primary-500" />
-            <span className="text-sm font-medium whitespace-nowrap">{badge.text}</span>
+            <Icon className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
+            <span className="text-sm font-medium leading-snug">{badge.text}</span>
           </div>
         );
       })}
