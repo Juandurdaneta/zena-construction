@@ -40,26 +40,26 @@ const projects = [
     src: "/images/portfolio/Resized_20220907_131403.jpeg",
     alt: "Construction Project",
     title: "Home Renovation",
-    category: "Renovation",
+    category: "Full Renovation",
     description: "Quality craftsmanship showcased in this detailed renovation project.",
   },
   {
     src: "/images/portfolio/IMG_3695.jpeg",
     alt: "Construction Work",
     title: "Property Improvement",
-    category: "Construction",
+    category: "Full Renovation",
     description: "Professional construction work demonstrating our attention to detail and quality.",
   },
   {
     src: "/images/portfolio/Screen Shot 2022-07-16 at 10.23.46 PM.png",
     alt: "Project Showcase",
     title: "Project Showcase",
-    category: "Renovation",
+    category: "Full Renovation",
     description: "Another example of our commitment to excellence in every project we undertake.",
   },
 ];
 
-const categories = ["All", "Kitchen", "Bathroom", "Full Renovation", "Renovation", "Construction"];
+const categories = ["All", "Kitchen", "Bathroom", "Full Renovation"];
 
 export default function OurWork() {
   const [selectedCategory, setSelectedCategory] = useState("All");
