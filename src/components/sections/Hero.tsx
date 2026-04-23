@@ -73,7 +73,7 @@ export function Hero() {
             className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed mb-10 max-w-2xl"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
-            Discover exactly what your remodel needs, what it will cost, and how to add $60K+ in value with{" "}
+            Discover exactly what your kitchen remodel or bathroom renovation needs, what it will cost, and how to add $60K+ in value with{" "}
             <span className="text-white font-medium">zero obligation</span> and{" "}
             <span className="text-white font-medium">complete transparency</span>.
           </motion.p>
