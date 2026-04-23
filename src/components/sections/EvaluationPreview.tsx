@@ -18,10 +18,10 @@ const evaluationPoints = [
   {
     icon: Eye,
     number: "01",
-    title: "Your Remodel Could Cost $20K+ More Than Quoted",
+    title: "Your Kitchen Remodel or Bathroom Renovation Could Cost $20K+ More Than Quoted If These Issues Aren\u2019t Addressed Upfront",
     highlight: "WARNING: Hidden Costs",
     description:
-      "Hidden plumbing issues, electrical upgrades, structural modifications\u2014we assess everything during initial consultation so there are no mid-project surprises that blow your budget.",
+      "Hidden plumbing issues, electrical upgrades, structural modifications; we assess everything during initial consultation so there are no mid-project surprises that blow your kitchen or bathroom renovation budget.",
     details: [
       "Complete plumbing and electrical assessment before work begins",
       "Structural evaluation to identify potential modifications needed",
@@ -31,10 +31,10 @@ const evaluationPoints = [
   {
     icon: Lightbulb,
     number: "02",
-    title: "Proven Material Selection Strategy",
+    title: "The Proven Material Selection Strategy We\u2019ve Used To Help 100+ Homes Get Designer Kitchen and Bathroom Results Without Designer Prices",
     highlight: "Designer Results Without Designer Prices",
     description:
-      "We\u2019ll reveal the exact framework we use: when to splurge on impact materials (countertops, fixtures), when builder-grade is perfectly fine (inside cabinets), and how to maximize every dollar.",
+      "We\u2019ll reveal the exact framework we use: when to splurge on impact materials (kitchen countertops, bathroom fixtures), when builder-grade is perfectly fine (inside kitchen cabinets), and how to maximize every dollar in your remodel.",
     details: [
       "Side-by-side material comparisons tailored to your project",
       "Cost-benefit analysis showing where to invest and where to save",
@@ -44,10 +44,10 @@ const evaluationPoints = [
   {
     icon: AlertOctagon,
     number: "03",
-    title: "5 Devastating Mistakes Nearly Every Homeowner Makes",
+    title: "The 5 Mistakes Made By Nearly Every Homeowner Planning A Kitchen or Bathroom Remodel",
     highlight: "Avoid Costly Remodeling Errors",
     description:
-      "Choosing contractors on price alone, not planning for hidden costs, skipping the design phase, making permanent fixture choices without seeing samples in your lighting, trusting vague timelines. Find out how to avoid them all.",
+      "Choosing contractors on price alone, not planning for hidden costs in bathroom plumbing or kitchen electrical, skipping the design phase, making permanent kitchen cabinet or bathroom tile choices without seeing samples in your lighting, trusting vague timelines. Find out how to avoid them all.",
     details: [
       "How to spot red flags in contractor bids and vague quotes",
       "Why skipping the design phase costs you more long-term",
@@ -57,10 +57,10 @@ const evaluationPoints = [
   {
     icon: TrendingUp,
     number: "04",
-    title: "3 Design Decisions That Add $50K+ To Your Home Value",
+    title: "3 Kitchen & Bathroom Design Decisions That Add $50K+ To Your Home Value Without Breaking Your Budget",
     highlight: "$50K+ Home Value Increase",
     description:
-      "Strategic choices in layout, materials, and finishes that dramatically increase resale value and daily enjoyment. Most contractors never mention them because they don\u2019t understand property investment strategy.",
+      "Strategic choices in kitchen layout, bathroom tile selections, countertop materials, and cabinet finishes that dramatically increase resale value and daily enjoyment. Most contractors never mention them because they don\u2019t understand property investment strategy.",
     details: [
       "Layout changes that transform both functionality and value",
       "Material and finish selections that appraisers notice immediately",
@@ -70,10 +70,10 @@ const evaluationPoints = [
   {
     icon: Eye,
     number: "05",
-    title: "Why Kitchen Remodel Pricing Varies By $40K",
+    title: "The TRUTH About Why Kitchen Remodel Pricing Varies By $40K For \u201cThe Same Work\u201d",
     highlight: "The Cold Hard TRUTH",
     description:
-      "One contractor quotes $35K, another $75K. We\u2019ll show you exactly what accounts for the difference: cabinet quality, countertop materials, labor standards, and where cheap pricing will cost you more long-term.",
+      "One contractor quotes $35K for your kitchen remodel, another $75K. We\u2019ll show you exactly what accounts for the difference: kitchen cabinet quality, countertop materials, bathroom fixture grades, labor standards, and where cheap pricing will cost you more long-term.",
     details: [
       "Cabinet quality tiers and what you actually get at each price point",
       "How labor standards affect the longevity of your remodel",
@@ -189,7 +189,7 @@ export function EvaluationPreview() {
     <Section background="gradient" paddingY="lg" id="evaluation">
       <SectionHeader
         label="Free Remodeling Consultation"
-        title="Here's A Brief Outline Of What We'll Cover In Your FREE Remodeling Consultation..."
+        title="Here's A Brief Outline Of What We'll Cover In Your FREE Kitchen & Bathroom Remodeling Consultation..."
         subtitle="A 90-minute session that takes you from confusion to complete clarity."
       />
 

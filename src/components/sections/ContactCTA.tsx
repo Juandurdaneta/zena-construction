@@ -28,23 +28,22 @@ interface FormData {
 const benefits = [
   {
     icon: Eye,
-    title: "Complete Space Assessment",
-    text: "See what\u2019s actually possible within your home\u2019s structure and your budget",
+    title: "Complete Remodeling Assessment",
+    text: "With design possibilities. See what\u2019s actually possible within your home\u2019s structure and your budget",
   },
   {
     icon: GraduationCap,
     title: "Hands-on Material Education",
-    text: "Finally understand the difference between builder-grade, mid-grade, and premium finishes in your actual lighting",
+    text: "With kitchen countertop, bathroom tile, and cabinet finish samples. Finally understand the difference between builder-grade, mid-grade, and premium finishes in your actual lighting",
   },
   {
     icon: DollarSign,
     title: "Transparent Pricing Breakdown",
-    text: "Showing exactly where every dollar goes\u2014no hidden costs or surprise change orders",
+    text: "Showing exactly where every dollar goes in your kitchen remodel or bathroom renovation. No hidden costs or surprise change orders",
   },
 ];
 
 const qualifications = [
-  "Serious about creating their dream kitchen, bathroom, or whole-home remodel",
   "Ready to make confident decisions once they have clarity",
   "Looking for a trusted partner who delivers on promises",
   "Willing to invest in quality that lasts decades",

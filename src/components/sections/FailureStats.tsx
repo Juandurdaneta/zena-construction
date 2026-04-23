@@ -34,7 +34,7 @@ export function FailureStats() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-white leading-tight mb-8"
         >
-          67% Of Houston Homeowners Regret Their Remodeling Decision{" "}
+          67% Of Houston Homeowners Regret Their Kitchen or Bathroom Remodeling Decision{" "}
           <span className="text-primary-400">Within 5 Years</span>
         </motion.h2>
 
@@ -46,14 +46,14 @@ export function FailureStats() {
           className="space-y-6 mb-10"
         >
           <p className="text-lg text-white/80 leading-relaxed">
-            Most homeowners end up regretting their kitchen, bathroom, or whole-home
-            remodel within 5 years. It&apos;s not their fault &mdash; they just haven&apos;t been taught
+            Most homeowners end up regretting their kitchen remodel, bathroom renovation, or
+            whole-home remodel within 5 years. It&apos;s not their fault &mdash; they just haven&apos;t been taught
             how to evaluate contractor claims, verify material quality, or spot the difference
             between genuine craftsmanship and smooth sales pitches.
           </p>
           <p className="text-lg text-white/80 leading-relaxed">
             It doesn&apos;t have to be this way for you. We can show you exactly how{" "}
-            <strong className="text-white">100+ families</strong> created their dream spaces
+            <strong className="text-white">100+ families</strong> created their dream kitchens and bathrooms
             and avoided the regret, wasted money, and stress most homeowners experience.
           </p>
           <p className="text-xl text-white/90 font-display leading-relaxed">

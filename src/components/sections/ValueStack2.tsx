@@ -18,10 +18,10 @@ const valuePoints = [
   {
     icon: Search,
     number: "01",
-    title: 'The 7-Question "Remodeling Contractor BS Detector"',
+    title: 'The 7-Question "Remodeling Contractor BS Detector" That Separates Quality From Smooth Talking',
     highlight: "Separates Quality From Smooth Talking",
     description:
-      "These specific questions reveal contractor licensing, insurance validity, subcontractor vs. in-house crews, payment schedules, and change order policies\u201490% of homeowners never ask them.",
+      "These specific questions reveal contractor licensing, insurance validity, subcontractor vs. in-house crews, payment schedules, and change order policies\u201490% of homeowners planning kitchen or bathroom remodels never ask them.",
     details: [
       "Exact questions to ask about licensing and insurance validity",
       "How to evaluate subcontractor vs. in-house crew quality",
@@ -31,10 +31,10 @@ const valuePoints = [
   {
     icon: Clock,
     number: "02",
-    title: "The Secret Timeline Your Remodel Should Actually Take",
+    title: "The Secret Timeline Your Kitchen Remodel or Bathroom Renovation Should Actually Take",
     highlight: "Spot Over-Promising Contractors",
     description:
-      "How long should your project REALLY take? We\u2019ll give you realistic timelines based on scope, so you can immediately spot contractors who over-promise or stretch projects unnecessarily.",
+      "How long should your kitchen remodel or bathroom renovation REALLY take? We\u2019ll give you realistic timelines based on scope, so you can immediately spot contractors who over-promise on your kitchen or bathroom project or stretch projects unnecessarily.",
     details: [
       "Realistic timelines for kitchen, bathroom, and whole-home remodels",
       "Warning signs of contractors who over-promise on schedules",
@@ -44,10 +44,10 @@ const valuePoints = [
   {
     icon: Paintbrush,
     number: "03",
-    title: "What NEVER To Do When Choosing Finishes",
+    title: "What NEVER To Do When Choosing Kitchen Countertops, Bathroom Tile, or Cabinet Finishes",
     highlight: "Avoid This Selection Mistake",
     description:
-      "Please, never make this selection mistake: choosing materials in showroom lighting that look completely different in your home. We\u2019ll show you exactly how to test samples in your actual space.",
+      "Please, never make this selection mistake (choosing kitchen countertops or bathroom tile in showroom lighting that look completely different in your home). We\u2019ll show you exactly how to test samples in your actual kitchen and bathroom space.",
     details: [
       "Why showroom lighting deceives even experienced designers",
       "The exact process for testing samples in your home\u2019s lighting",
@@ -57,10 +57,10 @@ const valuePoints = [
   {
     icon: Layout,
     number: "04",
-    title: 'The "Hidden" Decision That Determines If You Love Your Remodel in 10 Years',
+    title: 'The "Hidden" Decision That Determines If You Love Your Kitchen Remodel In 10 Years Or Regret It',
     highlight: "It\u2019s Not the Countertops or Cabinets",
     description:
-      "It\u2019s layout and workflow. 80% of homeowners focus only on aesthetics and ignore functionality, then hate using their \u201Cbeautiful\u201D kitchen daily.",
+      "Hint: It\u2019s not the kitchen countertops or bathroom cabinets. It\u2019s kitchen layout and workflow. 80% of homeowners planning kitchen remodels focus only on aesthetics and ignore functionality, then hate using their \u201Cbeautiful\u201D kitchen daily.",
     details: [
       "Why layout and workflow matter more than surface finishes",
       "The functionality test that predicts long-term satisfaction",

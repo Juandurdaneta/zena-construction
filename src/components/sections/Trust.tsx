@@ -18,7 +18,7 @@ const benefits = [
     icon: Palette,
     title: "Design Clarity",
     description:
-      "Know exactly what\u2019s possible in your space, what works with your home\u2019s structure, and what fits your budget.",
+      "Know exactly what\u2019s possible in your kitchen or bathroom space, what works with your home\u2019s structure, and what fits your budget.",
   },
   {
     icon: Award,
@@ -30,7 +30,7 @@ const benefits = [
     icon: TrendingUp,
     title: "Property Value Protection",
     description:
-      "Clear ROI projections showing how your remodel adds $40K-$80K to your home\u2019s worth.",
+      "Clear ROI projections showing how your kitchen remodel or bathroom renovation adds $40K-$80K to your home\u2019s worth.",
   },
   {
     icon: Heart,
@@ -48,7 +48,7 @@ const benefits = [
 
 const stats = [
   { value: "10+", label: "Years Experience" },
-  { value: "1,000+", label: "Homes Transformed" },
+  { value: "100+", label: "Homes Transformed" },
   { value: "100+", label: "Families Guided" },
   { value: "98%", label: "Client Satisfaction" },
 ];
@@ -120,7 +120,7 @@ export function Trust() {
             needs, what it will cost, and what quality actually looks like.
           </p>
           <p className="text-charcoal-600 leading-relaxed mb-4">
-            In the last 10 years, we&apos;ve guided <strong>1,000+ homeowners</strong> through
+            In the last 10 years, we&apos;ve guided <strong>100+ homeowners</strong> through
             this exact situation, whether they came to us with:
           </p>
           <ul className="text-charcoal-600 leading-relaxed mb-4 space-y-1 list-disc pl-5">

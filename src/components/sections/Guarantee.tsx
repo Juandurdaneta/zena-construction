@@ -49,13 +49,14 @@ export function Guarantee() {
               <span style={{ color: '#D4BC8C' }}>Guarantee</span>
             </h2>
             <p className="text-lg leading-relaxed mb-4" style={{ color: '#b8b8c1' }}>
-              Every Zena Construction remodel comes with real protection: 3-5 year
-              workmanship guarantees on major projects and 1-3 year guarantees on
-              smaller renovations. No fine print, no games, just work we stand behind.
+              Every Zena Construction kitchen remodel, bathroom renovation, and whole-home remodel
+              comes with real protection: 3-5 year workmanship guarantees on major projects and
+              1-3 year guarantees on smaller renovations.
             </p>
             <p className="text-lg leading-relaxed mb-8" style={{ color: '#b8b8c1' }}>
-              Plus, if you choose us and aren&apos;t satisfied with our communication
-              before we start the project, we&apos;ll refund your deposit, no questions asked.
+              Plus, our <span className="text-white font-semibold">Decision Confidence Promise</span>:
+              if you choose us and aren&apos;t satisfied with our communication before we start the project,
+              we&apos;ll refund your deposit, no questions asked.
             </p>
 
             {/* Guarantee Cards */}
@@ -146,7 +147,7 @@ export function Guarantee() {
                 transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
                 className="absolute -bottom-8 -left-8 bg-white rounded-xl p-3 shadow-soft-lg"
               >
-                <span className="text-2xl font-display font-bold" style={{ color: '#1a1a1f' }}>1000+</span>
+                <span className="text-2xl font-display font-bold" style={{ color: '#1a1a1f' }}>100+</span>
                 <span className="text-xs block" style={{ color: '#5d5d6c' }}>Projects</span>
               </motion.div>
             </div>
