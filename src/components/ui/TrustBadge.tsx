@@ -39,8 +39,8 @@ export function TrustBanner({ className = "", variant = "light" }: TrustBannerPr
   const badges = [
     { icon: "shield" as const, text: "IICRC Certified (Fire and Smoke Restoration)" },
     { icon: "award" as const, text: "10 Years of Experience Serving Houston" },
-    { icon: "users" as const, text: "1,000+ Houston Homes Transformed" },
-    { icon: "check" as const, text: "Proven Track Record in Kitchen, Bath & Whole-Home Remodels" },
+    { icon: "users" as const, text: "100+ Houston Homes Transformed" },
+    { icon: "check" as const, text: "Proven Track Record in Kitchen Remodeling, Bathroom Renovation & Whole-Home Remodels" },
   ];
 
   const bgStyles = variant === "light"

@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
 const painPoints = [
-  "Worried about choosing the wrong contractor\u2014you\u2019ve heard the horror stories: projects that take 6 months instead of 6 weeks, budgets that double mid-project, or work that looks good until you notice the shortcuts",
-  "Exhausted from past renovation nightmares\u2014timeline delays, poor communication, subcontractors who disappear for weeks, or finished work that doesn\u2019t match what you envisioned",
-  "Paralyzed by a major decision\u2014whether updating a kitchen, renovating a bathroom, or planning a whole-home remodel, you\u2019re terrified of making a $40K-$80K mistake you\u2019ll live with for decades",
-  "Misled by pricing\u2014one contractor quotes $35K for your kitchen, another quotes $75K for \u201Cthe same work,\u201D and you have no idea what accounts for the $40K difference",
+  "Worried about choosing the wrong contractor—you’ve heard the horror stories: kitchen remodels that take 6 months instead of 6 weeks, bathroom renovation budgets that double mid-project, or work that looks good until you notice the shortcuts",
+  "Exhausted from past renovation nightmares—timeline delays, poor communication, subcontractors who disappear for weeks, or your finished kitchen or bathroom doesn’t match what you envisioned",
+  "Paralyzed by a major decision—whether updating a kitchen, renovating a bathroom, or planning a whole-home remodel, you’re terrified of making a $40K-$80K mistake you’ll live with for decades",
+  "Misled by pricing—one contractor quotes $35K for your kitchen remodel, another quotes $75K for “the same work,” and you have no idea what accounts for the $40K difference",
 ];
 
 export function PainPoints() {

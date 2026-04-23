@@ -25,14 +25,14 @@ const steps = [
     icon: ClipboardCheck,
     title: "Space Assessment",
     description:
-      "Our experts assess your space and show you what\u2019s possible within your home\u2019s structure and budget.",
+      "Our experts assess your kitchen or bathroom space and show you what\u2019s possible within your home\u2019s structure and budget.",
     color: "bg-stone-100 text-stone-600",
   },
   {
     icon: FileText,
     title: "Design & Pricing Clarity",
     description:
-      "Get complete clarity on what your space can become, transparent pricing you can trust, and material education with samples.",
+      "Get complete clarity on what your kitchen or bathroom space can become, transparent pricing you can trust, and material and design education with samples.",
     color: "bg-amber-100 text-amber-800",
   },
   {
@@ -59,8 +59,8 @@ export function Process() {
     <Section background="light" paddingY="lg" id="process">
       <SectionHeader
         label="Our Process"
-        title="Simply Follow Our Proven Remodeling Process & You'll Avoid Costly Mistakes"
-        subtitle="Why waste months struggling to figure this out alone? You can save time and get dramatically better results when you get expert design consultation and follow our proven remodeling framework."
+        title="Simply Follow Our Proven Kitchen & Bathroom Remodeling Process & You'll Avoid Costly Mistakes"
+        subtitle="Why waste months struggling to figure this out alone? You can save time and get dramatically better results when you get expert design consultation and follow our proven kitchen and bathroom remodeling framework."
       />
 
       <div ref={ref} className="relative">
@@ -159,7 +159,7 @@ export function Process() {
         className="mt-16 text-center max-w-3xl mx-auto"
       >
         <p className="text-xl text-charcoal-700 leading-relaxed font-display mb-8">
-          Are you ready to stop putting off the remodel you&apos;ve wanted for years, stop feeling
+          Are you ready to stop putting off the kitchen remodel or bathroom renovation you&apos;ve wanted for years, stop feeling
           embarrassed about your outdated kitchen or bathroom, and{" "}
           <span className="text-charcoal-950 font-semibold">
             finally create the home you&apos;re proud to show guests?
