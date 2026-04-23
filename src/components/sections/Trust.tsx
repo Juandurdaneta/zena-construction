@@ -120,7 +120,7 @@ export function Trust() {
             needs, what it will cost, and what quality actually looks like.
           </p>
           <p className="text-charcoal-600 leading-relaxed mb-4">
-            In the last 10 years, we&apos;ve guided <strong>1,000+ homeowners</strong> through
+            In the last 10 years, we&apos;ve guided <strong>100+ homeowners</strong> through
             this exact situation, whether they came to us with:
           </p>
           <ul className="text-charcoal-600 leading-relaxed mb-4 space-y-1 list-disc pl-5">
